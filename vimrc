@@ -1,3 +1,7 @@
+call pathogen#infect()
+call pathogen#helptags()
+set ofu=syntaxcomplete#Complete
+
 set smartindent
 set ignorecase
 set nohidden
@@ -5,19 +9,21 @@ set number
 set laststatus=2
 set nocompatible
 set showmatch
-set t_Co=256
-colorscheme molokai
 set tabstop=4
 set shiftwidth=4
 set nowrap
-syntax on
-set ofu=syntaxcomplete#Complete
 filetype on
-call pathogen#infect()
-call pathogen#helptags()
 filetype indent on
 filetype plugin on
+
+set t_Co=256
+let g:solarized_termcolors=256
+syntax on
+set background=dark
+colorscheme solarized
+
 map <F2> :NERDTreeToggle<CR>
+
 map <F6> :vertical res -3<CR>
 map <F7> :vertical res +3<CR>
 nnoremap z} zfa}
@@ -27,4 +33,5 @@ let mapleader=","
 
 autocmd FileType c map <F9> :!gcc -o "%:p:r.out" -lm "%:p" && "%:p:r.out"<CR>
 autocmd FileType cpp map <F9> :!g++ -o "%:p:r.o" -lm "%:p" && "%:p:r.o"<CR>
+autocmd FileType cpp map <F8> :!g++ -o "%:p:r.o" -lm "%:p" && echo "Compilation completed succesfully"<CR>
 autocmd Filetype sh map <F9> :!"%:p"<CR>
