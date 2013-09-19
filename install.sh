@@ -2,7 +2,7 @@
 
 cur_dir=$(pwd)
 cd vim/bundle/vim-snipmate
-ln -s $cur_dir/vim/snippets
+ln -s $cur_dir/vim/snipps snippets
 cd $cur_dir
 files=$(ls -A | grep vim)
 echo "Files to be linked: $files"
