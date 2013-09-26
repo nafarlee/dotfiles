@@ -17,10 +17,8 @@ filetype indent on
 filetype plugin on
 
 set t_Co=256
-let g:solarized_termcolors=256
 syntax on
-set background=dark
-colorscheme solarized
+colorscheme molokai
 
 map <F2> :NERDTreeToggle<CR>
 
@@ -35,3 +33,4 @@ autocmd FileType c map <F9> :!gcc -o "%:p:r.out" -lm "%:p" && "%:p:r.out"<CR>
 autocmd FileType cpp map <F9> :!g++ -o "%:p:r.o" -lm "%:p" && "%:p:r.o"<CR>
 autocmd FileType cpp map <F8> :!g++ -o "%:p:r.o" -lm "%:p" && echo "Compilation completed succesfully"<CR>
 autocmd Filetype sh map <F9> :!"%:p"<CR>
+autocmd Filetype python map <F9> :!python "%:p"<CR>
