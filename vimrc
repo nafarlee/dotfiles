@@ -16,6 +16,8 @@ filetype on
 filetype indent on
 filetype plugin on
 
+autocmd FileType python set expandtab
+
 set t_Co=256
 syntax on
 colorscheme molokai
