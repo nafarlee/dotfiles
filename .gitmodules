@@ -1,9 +1,6 @@
 [submodule "vim/bundle/CSApprox"]
 	path = vim/bundle/CSApprox
 	url = https://github.com/vim-scripts/CSApprox.git
-[submodule "vim/bundle/vim-snipmate"]
-	path = vim/bundle/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate.git
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
