@@ -8,10 +8,10 @@
 	path = vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
 [submodule "/home/farley/.dotfiles/vim/bundle/tlib"]
-	path = /home/farley/.dotfiles/vim/bundle/tlib
+	path = vim/bundle/tlib
 	url = https://github.com/tomtom/tlib_vim.git
 [submodule "/home/farley/.dotfiles/vim/bundle/vim-addon-mw-utils"]
-	path = /home/farley/.dotfiles/vim/bundle/vim-addon-mw-utils
+	path = vim/bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
