@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
 dotfiles=$(pwd)
-cd vim/bundle/vim-snipmate
-ln -s $dotfiles/vim/snipps snippets
-cd $dotfiles
 files=$(ls | grep vim)
 echo "Files to be linked: $files"
 cd ~

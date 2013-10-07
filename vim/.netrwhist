@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/farley/Dropbox/School/comp226/hw'
 let g:netrw_dirhist_2='/home/farley/Dropbox/School/comp226'
 let g:netrw_dirhist_3='/home/farley/Dropbox/School'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/home/farley/Dropbox/School/comp132'
 let g:netrw_dirhist_5='/home/farley/Dropbox/School/comp132/class'
 let g:netrw_dirhist_6='/home/farley/Dropbox/School/comp132/class/sep25'
 let g:netrw_dirhist_7='/home/farley/.dotfiles/vim/snipps'
+let g:netrw_dirhist_8='/home/farley/.vim'
