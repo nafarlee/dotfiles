@@ -17,7 +17,7 @@ filetype indent on
 filetype plugin on
 
 if has('gui_running')
-	set guifont=Source\ Code\ Pro\ Medium\ 12
+	set guifont=Source_Code_Pro:h12
 endif
 
 autocmd FileType python set expandtab
