@@ -12,6 +12,7 @@ set showmatch
 set tabstop=4
 set shiftwidth=4
 set nowrap
+set colorcolumn=80
 filetype on
 filetype indent on
 filetype plugin on
