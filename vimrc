@@ -38,6 +38,8 @@ let mapleader=","
 
 nmap <F8> :SCCompile<cr>
 nmap <F9> :SCCompileRun<cr> 
+autocmd Filetype python map <F9> :!python "%:p"<CR>
+
 "Made Obsolete by SingleCompile
 "autocmd FileType c map <F9> :!gcc -o "%:p:r.out" -lm "%:p" && "%:p:r.out"<CR>
 "autocmd FileType cpp map <F9> :!g++ -o "%:p:r.o" -lm "%:p" && "%:p:r.o"<CR>
