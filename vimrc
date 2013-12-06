@@ -36,8 +36,8 @@ inoremap jk <esc>
 inoremap kj <esc>
 let mapleader=","
 
-nmap <F9> :SCCompile<cr>
-nmap <F10> :SCCompileRun<cr> 
+nmap <F8> :SCCompile<cr>
+nmap <F9> :SCCompileRun<cr> 
 "Made Obsolete by SingleCompile
 "autocmd FileType c map <F9> :!gcc -o "%:p:r.out" -lm "%:p" && "%:p:r.out"<CR>
 "autocmd FileType cpp map <F9> :!g++ -o "%:p:r.o" -lm "%:p" && "%:p:r.o"<CR>
