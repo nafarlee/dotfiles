@@ -38,6 +38,7 @@ autocmd Filetype python map <F9> :!python "%:p"<CR>
 
 if has('win32')
 	set guifont=Source_Code_Pro:h12
+	autocmd FileType java map <F9> :!javac "%:p" && java "%:t:r"<CR>
 endif
 
 "Made Obsolete by SingleCompile
