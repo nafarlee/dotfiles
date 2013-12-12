@@ -17,10 +17,6 @@ filetype on
 filetype indent on
 filetype plugin on
 
-if has('gui_running')
-	set guifont=Source_Code_Pro:h12
-endif
-
 autocmd FileType python set expandtab
 
 set t_Co=256
@@ -39,6 +35,10 @@ let mapleader=","
 nmap <F8> :SCCompile<cr>
 nmap <F9> :SCCompileRun<cr> 
 autocmd Filetype python map <F9> :!python "%:p"<CR>
+
+if has('win32')
+	set guifont=Source_Code_Pro:h12
+endif
 
 "Made Obsolete by SingleCompile
 "autocmd FileType c map <F9> :!gcc -o "%:p:r.out" -lm "%:p" && "%:p:r.out"<CR>
