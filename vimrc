@@ -1,7 +1,6 @@
 call pathogen#infect()
 call pathogen#helptags()
 set ofu=syntaxcomplete#Complete
-set rtp+=.vim/bundle/powerline/powerline/bindings/vim
 
 set smartindent
 set ignorecase
