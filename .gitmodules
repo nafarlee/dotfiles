@@ -34,6 +34,3 @@
 [submodule "vim/bundle/SingleCompile"]
 	path = vim/bundle/SingleCompile
 	url = https://github.com/xuhdev/SingleCompile.git
-[submodule "vim/bundle/powerline"]
-	path = vim/bundle/powerline
-	url = https://github.com/Lokaltog/powerline.git
