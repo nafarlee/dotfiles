@@ -36,3 +36,7 @@ if has('win32')
 	set guifont=Source_Code_Pro:h12
 endif
 
+if has("gui_gtk2")
+	set guifont=DejaVu\ Sans\ Mono\ Bold\ 10
+endif
+
