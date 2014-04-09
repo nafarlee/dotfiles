@@ -28,6 +28,7 @@ set incsearch
 set backspace=indent,eol,start
 set hlsearch
 set showcmd
+set wildmenu
 set mouse=a
 
 "indentation
