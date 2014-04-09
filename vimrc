@@ -14,6 +14,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle "scrooloose/syntastic"
 NeoBundle "flazz/vim-colorschemes"
 NeoBundle 'bling/vim-airline'
+NeoBundle "Shougo/unite.vim"
 
 call neobundle#end()
 filetype plugin indent on
