@@ -44,7 +44,7 @@ set showmatch
 set colorcolumn=80
 
 set t_Co=256
-colorscheme blue
+colorscheme molokai
 
 
 "filetypes
