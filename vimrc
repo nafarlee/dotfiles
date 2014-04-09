@@ -12,17 +12,11 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 ""Bundles Here
 NeoBundle "scrooloose/syntastic"
+NeoBundle "flazz/vim-colorschemes"
 
 call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
-
-
-"indentation
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set nowrap
 
 
 "sensibles
@@ -30,6 +24,17 @@ set ignorecase
 set number
 set nohidden
 set nocompatible
+set incsearch
+set backspace=indent,eol,start
+set hlsearch
+set showcmd
+set mouse=a
+
+"indentation
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set nowrap
 
 
 "visual
