@@ -1,2 +1,2 @@
-bundle/**
-~bundle/neobundle.vim
+vim/bundle/**
+~vim/bundle/neobundle.vim
