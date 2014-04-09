@@ -1,6 +1,13 @@
 "NeoBundle
-set runtimepath+=~/.vim/bundle/neobundle.vim/
-call neobundle#begin(expand('~/.vim/bundle/'))
+if has('win32')
+	set runtimepath+=~/vimfiles/bundle/neobundle.vim/
+	call neobundle#begin(expand('~/vimfiles/bundle/'))
+else
+	set runtimepath+=~/.vim/bundle/neobundle.vim/
+	call neobundle#begin(expand('~/.vim/bundle/'))
+endif
+
+
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 ""Bundles Here
