@@ -66,6 +66,8 @@ inoremap jk <esc>
 inoremap kj <esc>
 let mapleader="\<Space>"
 
+nnoremap <C-p> :Unite file_rec<cr>
+
 
 "fonting
 if has('win32')
