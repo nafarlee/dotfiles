@@ -4,7 +4,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 ""Bundles Here
-"NeoBundle "asdasda/edsfdsf.vim"
+NeoBundle "scrooloose/syntastic"
 
 call neobundle#end()
 filetype plugin indent on
