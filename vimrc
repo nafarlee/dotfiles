@@ -1,7 +1,3 @@
-call pathogen#infect()
-call pathogen#helptags()
-set ofu=syntaxcomplete#Complete
-
 set smartindent
 set ignorecase
 set nohidden
@@ -21,9 +17,7 @@ autocmd FileType python set expandtab
 
 set t_Co=256
 syntax on
-colorscheme molokai
-
-map <F2> :NERDTreeToggle<CR>
+colorscheme darkblue
 
 map <F6> :vertical res -3<CR>
 map <F7> :vertical res +3<CR>
