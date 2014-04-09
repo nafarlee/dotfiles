@@ -31,7 +31,7 @@ set showmatch
 set colorcolumn=80
 
 set t_Co=256
-colorscheme darkblue
+colorscheme blue
 
 
 "filetypes
