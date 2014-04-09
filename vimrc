@@ -1,3 +1,16 @@
+"NeoBundle
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+""Bundles Here
+"NeoBundle "asdasda/edsfdsf.vim"
+
+call neobundle#end()
+filetype plugin indent on
+NeoBundleCheck
+
+
 "indentation
 set smartindent
 set tabstop=4
