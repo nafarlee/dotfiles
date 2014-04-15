@@ -28,6 +28,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 "ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsSnippetsDir="~/.vim/bundle/vim-snippets/UltiSnips"
 let g:UltiSnipsEditSplit="vertical"
 
 "sensibles
