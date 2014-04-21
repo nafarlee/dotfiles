@@ -70,7 +70,7 @@ inoremap jk <esc>
 inoremap kj <esc>
 let mapleader="\<Space>"
 
-nnoremap <C-p> :Unite file_rec<cr>
+nnoremap <C-p> :Unite -start-insert file_rec<CR>
 
 
 "fonting
