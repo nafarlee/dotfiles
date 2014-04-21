@@ -17,7 +17,6 @@ NeoBundle 'bling/vim-airline'
 NeoBundle "Shougo/unite.vim"
 NeoBundle "vim-scripts/CSApprox"
 NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'Valloric/YouCompleteMe'
 
 call neobundle#end()
 filetype plugin indent on
