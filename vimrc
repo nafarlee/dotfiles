@@ -16,6 +16,7 @@ NeoBundle "flazz/vim-colorschemes"
 NeoBundle 'bling/vim-airline'
 NeoBundle "Shougo/unite.vim"
 NeoBundle "vim-scripts/CSApprox"
+NeoBundle 'plasticboy/vim-markdown'
 
 call neobundle#end()
 filetype plugin indent on
@@ -23,7 +24,7 @@ NeoBundleCheck
 
 "vim-airline
 let g:airline#extensions#tabline#enabled = 1
-"
+
 "sensibles
 set ignorecase
 set number
