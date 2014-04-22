@@ -8,8 +8,6 @@ else
 endif
 
 
-NeoBundleFetch 'Shougo/neobundle.vim'
-
 ""Bundles Here
 NeoBundle "scrooloose/syntastic"
 NeoBundle "flazz/vim-colorschemes"
