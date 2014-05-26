@@ -16,6 +16,7 @@ NeoBundle "Shougo/unite.vim"
 NeoBundle "vim-scripts/CSApprox"
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'othree/html5.vim'
 
 call neobundle#end()
 filetype plugin indent on
@@ -27,7 +28,7 @@ let g:airline#extensions#tabline#enabled = 1
 "sensibles
 set ignorecase
 set number
-set nohidden
+set hidden
 set nocompatible
 set incsearch
 set backspace=indent,eol,start
