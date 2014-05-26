@@ -17,6 +17,7 @@ NeoBundle "vim-scripts/CSApprox"
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'othree/html5.vim'
+NeoBundle 'hail2u/vim-css3-syntax'
 
 call neobundle#end()
 filetype plugin indent on
