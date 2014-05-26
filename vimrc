@@ -61,7 +61,7 @@ filetype plugin on
 syntax on
 
 autocmd FileType python set expandtab
-
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 "remaps
 map <F6> :vertical res -3<CR>
