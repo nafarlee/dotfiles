@@ -74,6 +74,11 @@ let mapleader="\<Space>"
 
 nnoremap <C-p> :Unite -start-insert file_rec<CR>
 
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
 
 "fonting
 if has('win32')
