@@ -35,6 +35,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 "sensibles
 set ignorecase
+set relativenumber
 set number
 set hidden
 set nocompatible
