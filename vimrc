@@ -79,7 +79,6 @@ map <F6> :vertical res -3<CR>
 map <F7> :vertical res +3<CR>
 nmap <F8> :TagbarToggle<CR>
 
-nnoremap z} zfa}
 inoremap jk <esc>
 inoremap kj <esc>
 let mapleader="\<Space>"
@@ -90,6 +89,8 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
+
 
 
 "fonting
