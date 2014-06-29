@@ -20,6 +20,8 @@ NeoBundle 'othree/html5.vim'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
+NeoBundle 'majutsushi/tagbar'
+
 
 call neobundle#end()
 filetype plugin indent on
@@ -75,6 +77,8 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 "remaps
 map <F6> :vertical res -3<CR>
 map <F7> :vertical res +3<CR>
+nmap <F8> :TagbarToggle<CR>
+
 nnoremap z} zfa}
 inoremap jk <esc>
 inoremap kj <esc>
