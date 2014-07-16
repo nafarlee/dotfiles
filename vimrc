@@ -21,7 +21,7 @@ NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'majutsushi/tagbar'
-
+NeoBundle 'guns/vim-clojure-static'
 
 call neobundle#end()
 filetype plugin indent on
