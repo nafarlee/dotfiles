@@ -96,7 +96,7 @@ nmap <silent> <Right> :wincmd l<CR>
 
 "fonting
 if has('win32')
-	set guifont=Source_Code_Pro_for_Powerline:h12
+	set guifont=Sauce_Code_Powerline:h11
 endif
 
 if has("gui_gtk2")
