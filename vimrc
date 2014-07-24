@@ -36,6 +36,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 "vim-airline
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 "sensibles
 set ignorecase
@@ -95,7 +96,7 @@ nmap <silent> <Right> :wincmd l<CR>
 
 "fonting
 if has('win32')
-	set guifont=Source_Code_Pro:h12
+	set guifont=Source_Code_Pro_for_Powerline:h12
 endif
 
 if has("gui_gtk2")
