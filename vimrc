@@ -9,11 +9,11 @@ endif
 
 
 ""Bundles Here
-NeoBundle "scrooloose/syntastic"
-NeoBundle "flazz/vim-colorschemes"
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'bling/vim-airline'
-NeoBundle "Shougo/unite.vim"
-NeoBundle "vim-scripts/CSApprox"
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'vim-scripts/CSApprox'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'othree/html5.vim'
