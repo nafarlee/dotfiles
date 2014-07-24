@@ -39,6 +39,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 "sensibles
+set encoding=utf-8
 set ignorecase
 set relativenumber
 set number
