@@ -23,6 +23,7 @@ NeoBundle 'honza/vim-snippets'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'guns/vim-clojure-static'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'Raimondi/delimitMate'
 
 call neobundle#end()
 filetype plugin indent on
