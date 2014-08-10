@@ -72,6 +72,7 @@ colorscheme jellybeans
 filetype on
 filetype indent on
 filetype plugin on
+set foldmethod=syntax
 syntax on
 
 autocmd FileType python set expandtab
