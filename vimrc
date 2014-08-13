@@ -94,13 +94,16 @@ nmap <silent> <Down> :wincmd j<CR>
 nmap <silent> <Left> :wincmd h<CR>
 nmap <silent> <Right> :wincmd l<CR>
 
-
-"fonting
-if has('win32')
-	set guifont=Sauce_Code_Powerline:h11
-endif
-
 if has("gui_gtk2")
 	set guifont=DejaVu\ Sans\ Mono\ Bold\ 10
+endif
+
+"Windows Options
+if has('win32')
+	set guifont=Sauce_Code_Powerline:h11
+	set guioptions-=m
+	set guioptions-=T
+	set guioptions-=r
+	set guioptions-=L
 endif
 
