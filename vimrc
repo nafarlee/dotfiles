@@ -23,6 +23,7 @@ NeoBundle 'honza/vim-snippets'
 NeoBundle 'guns/vim-clojure-static'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Raimondi/delimitMate'
+NeoBundle 'chriskempson/base16-vim'
 
 call neobundle#end()
 filetype plugin indent on
@@ -65,7 +66,7 @@ set showmatch
 set colorcolumn=80
 
 set t_Co=256
-colorscheme jellybeans
+colorscheme base16-default
 
 
 "filetypes
