@@ -67,6 +67,7 @@ set colorcolumn=80
 
 set t_Co=256
 colorscheme base16-default
+set background=dark
 
 
 "filetypes
