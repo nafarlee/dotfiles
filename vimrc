@@ -61,6 +61,7 @@ set nowrap
 set laststatus=2
 set showmatch
 set colorcolumn=80
+set cursorline
 
 set t_Co=256
 colorscheme base16-default
