@@ -21,6 +21,7 @@ NeoBundle 'guns/vim-clojure-static'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'whatyouhide/vim-gotham'
 
 call neobundle#end()
 filetype plugin indent on
