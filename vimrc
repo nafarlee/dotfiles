@@ -12,7 +12,7 @@ endif
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'bling/vim-airline'
-NeoBundle 'vim-scripts/CSApprox'
+NeoBundle 'godlygeek/csapprox'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'SirVer/ultisnips'
