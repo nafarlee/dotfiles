@@ -97,6 +97,10 @@ nmap <silent> <Right> :wincmd l<CR>
 
 if has("gui_gtk2")
 	set guifont=DejaVu\ Sans\ Mono\ Bold\ 10
+	set guioptions-=m
+	set guioptions-=T
+	set guioptions-=r
+	set guioptions-=L
 endif
 
 "Windows Options
