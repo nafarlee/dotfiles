@@ -96,7 +96,7 @@ nmap <silent> <Left> :wincmd h<CR>
 nmap <silent> <Right> :wincmd l<CR>
 
 if has("gui_gtk2")
-	set guifont=DejaVu\ Sans\ Mono\ Bold\ 10
+	set guifont=Source\ Code\ Pro\ for\ Powerline\ Regular\ 10
 	set guioptions-=m
 	set guioptions-=T
 	set guioptions-=r
