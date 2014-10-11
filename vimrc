@@ -80,15 +80,9 @@ autocmd FileType python set expandtab
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 "remaps
-map <F6> :vertical res -3<CR>
-map <F7> :vertical res +3<CR>
-nmap <F8> :TagbarToggle<CR>
-
 inoremap jk <esc>
 inoremap kj <esc>
 let mapleader="\<Space>"
-
-nnoremap <C-p> :Unite -start-insert file_rec<CR>
 
 nmap <silent> <Up> :wincmd k<CR>
 nmap <silent> <Down> :wincmd j<CR>
