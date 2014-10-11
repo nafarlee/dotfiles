@@ -89,6 +89,8 @@ nmap <silent> <Down> :wincmd j<CR>
 nmap <silent> <Left> :wincmd h<CR>
 nmap <silent> <Right> :wincmd l<CR>
 
+nnoremap <Leader>n :bn<CR>
+
 if has("gui_gtk2")
 	set guifont=Source\ Code\ Pro\ for\ Powerline\ Regular\ 10
 	set guioptions-=m
