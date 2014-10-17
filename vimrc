@@ -22,6 +22,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'whatyouhide/vim-gotham'
+NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 
 call neobundle#end()
 filetype plugin indent on
