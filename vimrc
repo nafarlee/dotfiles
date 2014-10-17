@@ -37,6 +37,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
+"syntastic
+let g:syntastic_check_on_open=1
+
 "sensibles
 set encoding=utf-8
 set ignorecase
