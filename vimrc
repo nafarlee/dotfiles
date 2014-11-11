@@ -24,6 +24,7 @@ NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'whatyouhide/vim-gotham'
 NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 NeoBundle 'moll/vim-node'
+NeoBundle 'kien/ctrlp.vim'
 
 call neobundle#end()
 filetype plugin indent on
