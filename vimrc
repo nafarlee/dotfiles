@@ -79,7 +79,7 @@ set colorcolumn=81
 set cursorline
 
 set t_Co=256
-colorscheme base16-default
+colorscheme molokai
 set background=dark
 
 
