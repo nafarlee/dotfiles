@@ -10,7 +10,6 @@ endif
 
 ""Bundles Here
 NeoBundle 'scrooloose/syntastic'
-NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'vim-ruby/vim-ruby'
@@ -19,8 +18,6 @@ NeoBundle 'honza/vim-snippets'
 NeoBundle 'guns/vim-clojure-static'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Raimondi/delimitMate'
-NeoBundle 'chriskempson/base16-vim'
-NeoBundle 'whatyouhide/vim-gotham'
 NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 NeoBundle 'moll/vim-node'
 NeoBundle 'kien/ctrlp.vim'
@@ -78,7 +75,6 @@ set colorcolumn=81
 set cursorline
 
 set t_Co=256
-colorscheme molokai
 set background=dark
 
 
