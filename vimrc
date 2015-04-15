@@ -119,3 +119,7 @@ if has('win32')
 	set guioptions-=L
 endif
 
+"Neovim Options
+if has('nvim')
+	let $NVIM_TUI_ENABLE_TRUE_COLORS=1
+endif
