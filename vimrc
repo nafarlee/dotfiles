@@ -112,6 +112,7 @@ endif
 
 "Windows Options
 if has('win32')
+	:cd $HOME
 	set guifont=Sauce_Code_Powerline:h11
 	set guioptions-=m
 	set guioptions-=T
