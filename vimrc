@@ -11,7 +11,7 @@ endif
 ""Bundles Here
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'bling/vim-airline'
-NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'tpope/vim-markdown'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
