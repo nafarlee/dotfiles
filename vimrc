@@ -18,7 +18,7 @@ NeoBundle 'honza/vim-snippets'
 NeoBundle 'guns/vim-clojure-static'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Raimondi/delimitMate'
-NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
+NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'moll/vim-node'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'octol/vim-cpp-enhanced-highlight'
