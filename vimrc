@@ -51,7 +51,6 @@ let g:syntastic_check_on_wq = 0
 "sensibles
 set encoding=utf-8
 set ignorecase
-set relativenumber
 set number
 set hidden
 set nocompatible
