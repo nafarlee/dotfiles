@@ -23,6 +23,7 @@ NeoBundle 'moll/vim-node'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'octol/vim-cpp-enhanced-highlight'
 NeoBundle 'freeo/vim-kalisi'
+NeoBundle 'bruno-/vim-man'
 
 call neobundle#end()
 filetype plugin indent on
