@@ -100,6 +100,11 @@ nmap <silent> <Down> :wincmd j<CR>
 nmap <silent> <Left> :wincmd h<CR>
 nmap <silent> <Right> :wincmd l<CR>
 
+nmap <C-Up> :wincmd +<CR>
+nmap <C-Down> :wincmd -<CR>
+nmap <C-Left> :wincmd <<CR>
+nmap <C-Right> :wincmd ><CR>
+
 nnoremap <Leader>n :bn<CR>
 
 if has("gui_gtk2")
