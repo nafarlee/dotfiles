@@ -49,6 +49,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+"js-beautify
+autocmd FileType javascript noremap <buffer> <Leader>b :call JsBeautify()<cr>
+autocmd FileType json noremap <buffer> <Leader>b :call JsBeautify()<cr>
+
 "sensibles
 set encoding=utf-8
 set ignorecase
