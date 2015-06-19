@@ -55,6 +55,9 @@ let g:syntastic_check_on_wq = 0
 autocmd FileType javascript noremap <buffer> <Leader>b :call JsBeautify()<cr>
 autocmd FileType json noremap <buffer> <Leader>b :call JsBeautify()<cr>
 
+"ctrlp
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
 "sensibles
 set encoding=utf-8
 set ignorecase
