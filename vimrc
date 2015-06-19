@@ -20,7 +20,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'moll/vim-node'
-NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'Shougo/unite.vim'
 NeoBundle 'octol/vim-cpp-enhanced-highlight'
 NeoBundle 'freeo/vim-kalisi'
 NeoBundle 'bruno-/vim-man'
@@ -55,8 +55,10 @@ let g:syntastic_check_on_wq = 0
 autocmd FileType javascript noremap <buffer> <Leader>b :call JsBeautify()<cr>
 autocmd FileType json noremap <buffer> <Leader>b :call JsBeautify()<cr>
 
-"ctrlp
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+"unite
+noremap <C-p> :<C-u>Unite -start-insert file_rec<cr>
+autocmd Filetype unite imap <buffer> <Esc> <Plug>(unite_exit)
+
 
 "sensibles
 set encoding=utf-8
