@@ -58,7 +58,7 @@ autocmd FileType json noremap <buffer> <Leader>b :call JsBeautify()<cr>
 "unite
 noremap <C-p> :<C-u>Unite -start-insert file_rec<cr>
 autocmd Filetype unite imap <buffer> <Esc> <Plug>(unite_exit)
-
+call unite#custom#source('file_rec/async,file_rec', 'ignore_pattern', 'node_modules/')
 
 "sensibles
 set encoding=utf-8
