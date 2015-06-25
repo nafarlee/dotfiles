@@ -60,7 +60,7 @@ call unite#custom#source('file_rec/async,file_rec', 'ignore_pattern', 'node_modu
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 
 "NERDTree
-map <Leader>e :NERDTreeToggle<CR>
+map <Leader>f :NERDTreeToggle<CR>
 
 "sensibles
 set encoding=utf-8
