@@ -22,7 +22,6 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'octol/vim-cpp-enhanced-highlight'
 NeoBundle 'freeo/vim-kalisi'
 NeoBundle 'maksimr/vim-jsbeautify'
-NeoBundle 'scrooloose/nerdtree'
 
 call neobundle#end()
 filetype plugin indent on
@@ -58,9 +57,6 @@ noremap <C-p> :<C-u>Unite -start-insert file_rec<cr>
 autocmd Filetype unite imap <buffer> <Esc> <Plug>(unite_exit)
 call unite#custom#source('file_rec/async,file_rec', 'ignore_pattern', 'node_modules/')
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
-
-"NERDTree
-map <Leader>f :NERDTreeToggle<CR>
 
 "sensibles
 set encoding=utf-8
