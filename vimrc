@@ -103,6 +103,8 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 "remaps
 inoremap jk <esc>
 inoremap kj <esc>
+tnoremap jk <C-\><C-n>
+tnoremap kj <C-\><C-n>
 let mapleader="\<Space>"
 
 nmap <silent> <Up> :wincmd k<CR>
