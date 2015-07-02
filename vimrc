@@ -18,7 +18,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'moll/vim-node'
-NeoBundle 'Shougo/unite.vim'
+NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'octol/vim-cpp-enhanced-highlight'
 NeoBundle 'freeo/vim-kalisi'
 NeoBundle 'maksimr/vim-jsbeautify'
@@ -52,11 +52,11 @@ let g:syntastic_check_on_wq = 0
 autocmd FileType javascript noremap <buffer> <Leader>b :call JsBeautify()<cr>
 autocmd FileType json noremap <buffer> <Leader>b :call JsBeautify()<cr>
 
-"unite
-noremap <C-p> :<C-u>Unite -start-insert file_rec<cr>
-autocmd Filetype unite imap <buffer> <Esc> <Plug>(unite_exit)
-call unite#custom#source('file_rec/async,file_rec', 'ignore_pattern', 'node_modules/')
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
+"ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = '\v[\/]node_modules|\.(git|hg|svn)$'
 
 "sensibles
 set encoding=utf-8
