@@ -51,6 +51,9 @@ let g:syntastic_check_on_wq = 0
 "js-beautify
 autocmd FileType javascript noremap <buffer> <Leader>b :call JsBeautify()<cr>
 autocmd FileType json noremap <buffer> <Leader>b :call JsBeautify()<cr>
+let g:config_Beautifier = {}
+let g:config_Beautifier['js'] = {}
+let g:config_Beautifier['js'].indent_size = '2'
 
 "ctrlp
 let g:ctrlp_map = '<c-p>'
