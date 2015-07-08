@@ -121,6 +121,8 @@ nmap <C-Left> :wincmd <<CR>
 nmap <C-Right> :wincmd ><CR>
 
 nnoremap <Leader>n :bn<CR>
+nnoremap <Leader>, :vertical resize -10<CR>
+nnoremap <Leader>. :vertical resize +10<CR>
 
 if has("gui_gtk2")
 	set guifont=Source\ Code\ Pro\ for\ Powerline\ Regular\ 10
