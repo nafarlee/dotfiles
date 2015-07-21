@@ -24,10 +24,14 @@ NeoBundle 'freeo/vim-kalisi'
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'goatslacker/mango.vim'
+NeoBundle 'vasconcelloslf/vim-interestingwords'
 
 call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
+
+"interestingWords
+let g:interestingWordsRandomiseColors = 1
 
 "ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
