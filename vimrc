@@ -23,7 +23,6 @@ NeoBundle 'octol/vim-cpp-enhanced-highlight'
 NeoBundle 'freeo/vim-kalisi'
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'godlygeek/tabular'
-NeoBundle 'goatslacker/mango.vim'
 NeoBundle 'vasconcelloslf/vim-interestingwords'
 
 call neobundle#end()
