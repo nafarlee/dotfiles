@@ -24,6 +24,7 @@ NeoBundle 'freeo/vim-kalisi'
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'vasconcelloslf/vim-interestingwords'
+NeoBundle 'goatslacker/mango.vim'
 NeoBundle 'chriskempson/base16-vim'
 
 call neobundle#end()
