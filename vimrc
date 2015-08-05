@@ -9,23 +9,25 @@ endif
 
 
 ""Bundles Here
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'bling/vim-airline'
 NeoBundle 'tpope/vim-markdown'
-NeoBundle 'SirVer/ultisnips'
-NeoBundle 'honza/vim-snippets'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'moll/vim-node'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'octol/vim-cpp-enhanced-highlight'
-NeoBundle 'freeo/vim-kalisi'
 NeoBundle 'maksimr/vim-jsbeautify'
-NeoBundle 'godlygeek/tabular'
-NeoBundle 'vasconcelloslf/vim-interestingwords'
+NeoBundle 'moll/vim-node'
+NeoBundle 'octol/vim-cpp-enhanced-highlight'
+
 NeoBundle 'goatslacker/mango.vim'
 NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'freeo/vim-kalisi'
+NeoBundle 'bling/vim-airline'
+
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'Raimondi/delimitMate'
+NeoBundle 'SirVer/ultisnips'
+NeoBundle 'honza/vim-snippets'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'vasconcelloslf/vim-interestingwords'
 
 call neobundle#end()
 filetype plugin indent on
