@@ -113,6 +113,7 @@ syntax on
 
 autocmd FileType python set expandtab
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+au FileType html setl sw=2 tabstop=2
 
 "remaps
 inoremap jk <esc>
