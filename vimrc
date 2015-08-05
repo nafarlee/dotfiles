@@ -14,6 +14,8 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'moll/vim-node'
 NeoBundle 'octol/vim-cpp-enhanced-highlight'
+NeoBundle 'othree/html5.vim'
+NeoBundle 'chrisyip/Better-CSS-Syntax-for-Vim'
 
 NeoBundle 'goatslacker/mango.vim'
 NeoBundle 'chriskempson/base16-vim'
