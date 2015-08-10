@@ -30,6 +30,7 @@ NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'vasconcelloslf/vim-interestingwords'
+NeoBundle 'rking/ag.vim'
 
 call neobundle#end()
 filetype plugin indent on
