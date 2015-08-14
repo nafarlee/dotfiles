@@ -1,40 +1,30 @@
-"NeoBundle
-if has('win32')
-	set runtimepath+=~/vimfiles/bundle/neobundle.vim/
-	call neobundle#begin(expand('~/vimfiles/bundle/'))
-else
-	set runtimepath+=~/.vim/bundle/neobundle.vim/
-	call neobundle#begin(expand('~/.vim/bundle/'))
-endif
+call plug#begin()
 
+""Plugs Here
+Plug 'tpope/vim-markdown'
+Plug 'pangloss/vim-javascript'
+Plug 'maksimr/vim-jsbeautify'
+Plug 'moll/vim-node'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'othree/html5.vim'
+Plug 'chrisyip/Better-CSS-Syntax-for-Vim'
 
-""Bundles Here
-NeoBundle 'tpope/vim-markdown'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'maksimr/vim-jsbeautify'
-NeoBundle 'moll/vim-node'
-NeoBundle 'octol/vim-cpp-enhanced-highlight'
-NeoBundle 'othree/html5.vim'
-NeoBundle 'chrisyip/Better-CSS-Syntax-for-Vim'
+Plug 'goatslacker/mango.vim'
+Plug 'chriskempson/base16-vim'
+Plug 'freeo/vim-kalisi'
+Plug 'bling/vim-airline'
 
-NeoBundle 'goatslacker/mango.vim'
-NeoBundle 'chriskempson/base16-vim'
-NeoBundle 'freeo/vim-kalisi'
-NeoBundle 'bling/vim-airline'
+Plug 'scrooloose/syntastic'
+Plug 'godlygeek/tabular'
+Plug 'tpope/vim-fugitive'
+Plug 'Raimondi/delimitMate'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'kien/ctrlp.vim'
+Plug 'vasconcelloslf/vim-interestingwords'
+Plug 'rking/ag.vim'
 
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'godlygeek/tabular'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'Raimondi/delimitMate'
-NeoBundle 'SirVer/ultisnips'
-NeoBundle 'honza/vim-snippets'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'vasconcelloslf/vim-interestingwords'
-NeoBundle 'rking/ag.vim'
-
-call neobundle#end()
-filetype plugin indent on
-NeoBundleCheck
+call plug#end()
 
 "interestingWords
 let g:interestingWordsRandomiseColors = 1
