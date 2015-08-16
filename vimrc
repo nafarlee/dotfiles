@@ -109,8 +109,6 @@ autocmd Filetype html setl sw=2 ts=2 et sts=2
 "remaps
 inoremap jk <esc>
 inoremap kj <esc>
-tnoremap jk <C-\><C-n>
-tnoremap kj <C-\><C-n>
 let mapleader="\<Space>"
 
 nmap <silent> <Up> :wincmd k<CR>
@@ -148,4 +146,6 @@ endif
 "Neovim Options
 if has('nvim')
 	let $NVIM_TUI_ENABLE_TRUE_COLORS=1
+	tnoremap jk <C-\><C-n>
+	tnoremap kj <C-\><C-n>
 endif
