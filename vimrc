@@ -16,6 +16,7 @@ Plug 'bling/vim-airline'
 
 Plug 'scrooloose/syntastic'
 Plug 'godlygeek/tabular'
+Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 Plug 'SirVer/ultisnips'
