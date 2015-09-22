@@ -80,8 +80,9 @@ set omnifunc=syntaxcomplete#Complete
 
 "indentation
 set smartindent
-set tabstop=4
-set shiftwidth=4
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 set nowrap
 
 
