@@ -9,6 +9,7 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'othree/html5.vim'
 Plug 'chrisyip/Better-CSS-Syntax-for-Vim'
 Plug 'wting/rust.vim'
+Plug 'guns/vim-clojure-static'
 
 Plug 'goatslacker/mango.vim'
 Plug 'chriskempson/base16-vim'
