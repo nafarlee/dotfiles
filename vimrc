@@ -10,6 +10,7 @@ Plug 'othree/html5.vim'
 Plug 'chrisyip/Better-CSS-Syntax-for-Vim'
 Plug 'wting/rust.vim'
 Plug 'guns/vim-clojure-static'
+Plug 'msanders/cocoa.vim'
 
 Plug 'goatslacker/mango.vim'
 Plug 'chriskempson/base16-vim'
