@@ -94,7 +94,7 @@ set colorcolumn=81
 set cursorline
 
 set t_Co=256
-colorscheme kalisi
+colorscheme base16-chalk
 set background=dark
 
 
