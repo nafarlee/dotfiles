@@ -26,6 +26,7 @@ Plug 'SirVer/ultisnips'
 Plug 'kien/ctrlp.vim'
 Plug 'vasconcelloslf/vim-interestingwords'
 Plug 'rking/ag.vim'
+Plug 'tpope/vim-vinegar'
 
 call plug#end()
 
