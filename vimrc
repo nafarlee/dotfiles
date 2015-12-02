@@ -5,7 +5,7 @@ Plug 'tpope/vim-markdown', {'for': 'markdown'}
 Plug 'pangloss/vim-javascript', {'for': 'javascript'}
 Plug 'maksimr/vim-jsbeautify', {'for': 'javascript'}
 Plug 'moll/vim-node', {'for': 'javascript'}
-Plug 'octol/vim-cpp-enhanced-highlight', {'for': 'cpp'}
+Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'othree/html5.vim', {'for': 'html'}
 Plug 'chrisyip/Better-CSS-Syntax-for-Vim', {'for': 'css'}
 Plug 'wting/rust.vim', {'for': 'rust'}
