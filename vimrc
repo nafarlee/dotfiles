@@ -12,26 +12,19 @@ Plug 'wting/rust.vim', {'for': 'rust'}
 Plug 'guns/vim-clojure-static', {'for': 'clojure'}
 Plug 'msanders/cocoa.vim', {'for': 'objc'}
 
-Plug 'goatslacker/mango.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'freeo/vim-kalisi'
 Plug 'bling/vim-airline'
 
 Plug 'scrooloose/syntastic'
 Plug 'godlygeek/tabular'
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 Plug 'SirVer/ultisnips'
 Plug 'kien/ctrlp.vim'
-Plug 'vasconcelloslf/vim-interestingwords'
-Plug 'rking/ag.vim'
 Plug 'tpope/vim-vinegar'
 
 call plug#end()
-
-"interestingWords
-let g:interestingWordsRandomiseColors = 1
 
 "ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
