@@ -23,6 +23,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'SirVer/ultisnips'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-vinegar'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
