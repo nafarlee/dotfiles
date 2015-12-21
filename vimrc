@@ -16,7 +16,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'freeo/vim-kalisi'
 Plug 'bling/vim-airline'
 
-Plug 'scrooloose/syntastic'
+Plug 'benekastah/neomake'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
@@ -36,12 +36,8 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
-"syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_javascript_checkers = ['eslint']
-
+"neomake
+autocmd! BufWritePost * Neomake
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
