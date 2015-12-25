@@ -27,6 +27,9 @@ Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
+"rust
+let g:rustfmt_autosave = 1
+
 "ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
