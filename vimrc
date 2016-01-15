@@ -87,6 +87,7 @@ set laststatus=2
 set showmatch
 set colorcolumn=81
 set cursorline
+set cole=1
 
 set t_Co=256
 colorscheme base16-chalk
