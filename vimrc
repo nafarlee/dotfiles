@@ -15,6 +15,7 @@ Plug 'msanders/cocoa.vim', {'for': 'objc'}
 Plug 'chriskempson/base16-vim'
 Plug 'freeo/vim-kalisi'
 Plug 'bling/vim-airline'
+Plug 'morhetz/gruvbox'
 
 Plug 'benekastah/neomake'
 Plug 'godlygeek/tabular'
