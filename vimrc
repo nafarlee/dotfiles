@@ -11,6 +11,7 @@ Plug 'chrisyip/Better-CSS-Syntax-for-Vim', {'for': 'css'}
 Plug 'wting/rust.vim', {'for': 'rust'}
 Plug 'guns/vim-clojure-static', {'for': 'clojure'}
 Plug 'msanders/cocoa.vim', {'for': 'objc'}
+Plug 'benjie/neomake-local-eslint.vim'
 
 Plug 'chriskempson/base16-vim'
 Plug 'freeo/vim-kalisi'
