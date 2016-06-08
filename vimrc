@@ -97,7 +97,7 @@ set colorcolumn=100
 set cursorline
 
 set t_Co=256
-colorscheme base16-chalk
+colorscheme molokai
 set background=dark
 
 
