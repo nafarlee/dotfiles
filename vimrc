@@ -30,6 +30,7 @@ Plug 'SirVer/ultisnips'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
 
