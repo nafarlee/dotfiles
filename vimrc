@@ -1,16 +1,16 @@
 call plug#begin()
 
 ""Plugs Here
-Plug 'tpope/vim-markdown', {'for': 'markdown'}
-Plug 'pangloss/vim-javascript', {'for': 'javascript'}
-Plug 'maksimr/vim-jsbeautify', {'for': 'javascript'}
-Plug 'moll/vim-node', {'for': 'javascript'}
+Plug 'plasticboy/vim-markdown'
+Plug 'pangloss/vim-javascript'
+Plug 'maksimr/vim-jsbeautify'
+Plug 'moll/vim-node'
 Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'othree/html5.vim', {'for': 'html'}
-Plug 'chrisyip/Better-CSS-Syntax-for-Vim', {'for': 'css'}
-Plug 'wting/rust.vim', {'for': 'rust'}
-Plug 'guns/vim-clojure-static', {'for': 'clojure'}
-Plug 'msanders/cocoa.vim', {'for': 'objc'}
+Plug 'othree/html5.vim'
+Plug 'chrisyip/Better-CSS-Syntax-for-Vim'
+Plug 'wting/rust.vim'
+Plug 'guns/vim-clojure-static'
+Plug 'msanders/cocoa.vim'
 Plug 'benjie/neomake-local-eslint.vim'
 
 Plug 'chriskempson/base16-vim'
