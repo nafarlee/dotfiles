@@ -13,6 +13,7 @@ Plug 'guns/vim-clojure-static'
 Plug 'msanders/cocoa.vim'
 Plug 'benjie/neomake-local-eslint.vim'
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'nafarlee/vim-xsodata'
 
 Plug 'chriskempson/base16-vim'
 Plug 'freeo/vim-kalisi'
