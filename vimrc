@@ -3,7 +3,6 @@ call plug#begin()
 ""Plugs Here
 Plug 'plasticboy/vim-markdown'
 Plug 'pangloss/vim-javascript'
-Plug 'maksimr/vim-jsbeautify'
 Plug 'moll/vim-node'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'othree/html5.vim'
@@ -13,6 +12,7 @@ Plug 'guns/vim-clojure-static'
 Plug 'msanders/cocoa.vim'
 Plug 'benjie/neomake-local-eslint.vim'
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'Chiel92/vim-autoformat'
 Plug 'nafarlee/vim-xsodata'
 
 Plug 'chriskempson/base16-vim'
@@ -54,13 +54,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
-"js-beautify
-autocmd FileType javascript noremap <buffer> <Leader>b :call JsBeautify()<cr>
-autocmd FileType json noremap <buffer> <Leader>b :call JsBeautify()<cr>
-let g:config_Beautifier = {}
-let g:config_Beautifier['js'] = {}
-let g:config_Beautifier['js'].indent_size = '2'
 
 "ctrlp
 let g:ctrlp_map = '<c-p>'
