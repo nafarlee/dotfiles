@@ -93,8 +93,9 @@ set colorcolumn=100
 set cursorline
 
 set t_Co=256
-colorscheme molokai
+colorscheme gruvbox
 set background=dark
+let g:rehash256 = 1
 
 
 "filetypes
