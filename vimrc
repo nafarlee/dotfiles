@@ -14,6 +14,8 @@ Plug 'jaawerth/neomake-local-eslint-first'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'Chiel92/vim-autoformat'
 Plug 'nafarlee/vim-xsodata'
+Plug 'nafarlee/vim-hdbsequence'
+Plug 'nafarlee/vim-hdbdd'
 
 Plug 'chriskempson/base16-vim'
 Plug 'freeo/vim-kalisi'
