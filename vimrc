@@ -101,6 +101,8 @@ autocmd FileType objc set sw=4 ts=4 sts=4
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd Filetype html setl sw=2 ts=2 et sts=2
 
+autocmd FileType javascript map <buffer> <Leader>r :!node %<CR>
+
 "remaps
 inoremap jk <esc>
 inoremap kj <esc>
