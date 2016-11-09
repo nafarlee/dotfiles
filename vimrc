@@ -139,7 +139,7 @@ endif
 
 "Neovim Options
 if has('nvim')
-	let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+        set termguicolors
 	tnoremap jk <C-\><C-n>
 	tnoremap kj <C-\><C-n>
 endif
