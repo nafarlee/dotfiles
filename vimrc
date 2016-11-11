@@ -26,6 +26,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/goyo.vim'
+Plug 'mxw/vim-jsx'
 
 call plug#end()
 
