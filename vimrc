@@ -49,11 +49,6 @@ let g:airline_extensions = []
 "neomake
 autocmd! BufWritePost * Neomake
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
 "sensibles
 set encoding=utf-8
 set ignorecase
