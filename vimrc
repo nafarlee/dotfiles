@@ -62,6 +62,7 @@ set showcmd
 set wildmenu
 set mouse=a
 set omnifunc=syntaxcomplete#Complete
+set inccommand=split
 
 "indentation
 set smartindent
