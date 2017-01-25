@@ -6,7 +6,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'moll/vim-node'
 Plug 'wting/rust.vim'
 Plug 'jaawerth/neomake-local-eslint-first'
-Plug 'mustache/vim-mustache-handlebars'
 Plug 'Chiel92/vim-autoformat'
 Plug 'nafarlee/vim-xsodata'
 Plug 'nafarlee/vim-hdbsequence'
@@ -25,8 +24,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'airblade/vim-gitgutter'
-Plug 'junegunn/goyo.vim'
-Plug 'mxw/vim-jsx'
 
 call plug#end()
 
