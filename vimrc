@@ -30,9 +30,6 @@ call plug#end()
 "fzf
 nmap <C-p> :GFiles<CR>
 
-"rust
-let g:rustfmt_autosave = 1
-
 "ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -45,6 +42,9 @@ let g:airline_extensions = []
 
 "neomake
 autocmd! BufWritePost * Neomake
+let g:neomake_rust_enabled_makers = []
+autocmd! BufWritePost *.rs :Neomake! cargo
+
 
 "sensibles
 set encoding=utf-8
