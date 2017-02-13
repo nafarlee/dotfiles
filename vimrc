@@ -4,7 +4,7 @@ call plug#begin()
 Plug 'plasticboy/vim-markdown'
 Plug 'pangloss/vim-javascript'
 Plug 'moll/vim-node'
-Plug 'wting/rust.vim'
+Plug 'rust-lang/rust.vim'
 Plug 'jaawerth/neomake-local-eslint-first'
 Plug 'Chiel92/vim-autoformat'
 Plug 'nafarlee/vim-xsodata'
