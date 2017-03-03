@@ -115,6 +115,7 @@ nmap <C-Left> :wincmd <<CR>
 nmap <C-Right> :wincmd ><CR>
 
 nnoremap <Leader>n :bn<CR>
+nnoremap <Leader>c :b#<bar>bd#<CR>
 nnoremap <Leader>, :vertical resize -10<CR>
 nnoremap <Leader>. :vertical resize +10<CR>
 
