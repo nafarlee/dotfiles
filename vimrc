@@ -33,6 +33,7 @@ call plug#end()
 
 "fzf
 nmap <C-p> :Files<CR>
+nmap <C-o> :Ag<CR>
 
 "ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
