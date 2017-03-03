@@ -32,7 +32,7 @@ Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 "fzf
-nmap <C-p> :GFiles<CR>
+nmap <C-p> :Files<CR>
 
 "ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
