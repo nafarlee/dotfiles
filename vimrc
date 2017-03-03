@@ -16,6 +16,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'chriskempson/base16-vim'
 Plug 'bling/vim-airline'
 Plug 'morhetz/gruvbox'
+Plug 'whatyouhide/vim-gotham'
 
 Plug 'benekastah/neomake'
 Plug 'godlygeek/tabular'
@@ -79,7 +80,7 @@ set colorcolumn=100
 set cursorline
 
 set t_Co=256
-colorscheme gruvbox
+colorscheme gotham
 set background=dark
 let g:rehash256 = 1
 
