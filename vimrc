@@ -10,8 +10,6 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'nafarlee/vim-xsodata'
 Plug 'nafarlee/vim-hdbsequence'
 Plug 'nafarlee/vim-hdbdd'
-Plug 'OmniSharp/omnisharp-vim'
-Plug 'tpope/vim-dispatch'
 
 Plug 'chriskempson/base16-vim'
 Plug 'bling/vim-airline'
