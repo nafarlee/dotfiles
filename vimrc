@@ -10,6 +10,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'nafarlee/vim-xsodata'
 Plug 'nafarlee/vim-hdbsequence'
 Plug 'nafarlee/vim-hdbdd'
+Plug 'ElmCast/elm-vim'
 
 Plug 'chriskempson/base16-vim'
 Plug 'bling/vim-airline'
@@ -93,6 +94,7 @@ syntax on
 
 autocmd FileType python set expandtab
 autocmd FileType objc set sw=4 ts=4 sts=4
+autocmd FileType elm set sw=4 ts=4 sts=4
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd Filetype html setl sw=2 ts=2 et sts=2
 
