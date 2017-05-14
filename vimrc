@@ -16,6 +16,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'bling/vim-airline'
 Plug 'morhetz/gruvbox'
 Plug 'whatyouhide/vim-gotham'
+Plug 'dracula/vim'
 
 Plug 'benekastah/neomake'
 Plug 'godlygeek/tabular'
@@ -80,7 +81,7 @@ set colorcolumn=100
 set cursorline
 
 set t_Co=256
-colorscheme gotham
+colorscheme dracula
 set background=dark
 let g:rehash256 = 1
 
