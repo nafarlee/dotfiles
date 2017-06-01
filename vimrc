@@ -22,8 +22,6 @@ Plug 'benekastah/neomake'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
@@ -34,11 +32,6 @@ call plug#end()
 "fzf
 nmap <C-p> :Files<CR>
 nmap <C-o> :Ag<CR>
-
-"ultisnips
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 "vim-airline
 let g:airline#extensions#tabline#enabled = 1
