@@ -1,14 +1,7 @@
 #!/usr/bin/env bash
 
-dotfiles=$(pwd)
-files=$(ls | grep vim)
-echo "Files to be linked: $files"
-cd ~
-echo "Changed directory to home"
-for file in $files; do
-	ln -s "$dotfiles/$file" ".$file"
-done
+dotfiles_dir=$(dirname $(realpath $0))
 
-echo "linking completed"
-cd $dotfiles
-
+mkdir -p "$HOME/.config"
+ln -s "$dotfiles_dir/vim" "$HOME/.config/nvim"
+ln -s "$dotfiles_dir/vimrc" "$HOME/.config/nvim/init.vim"
