@@ -1,16 +1,12 @@
 call plug#begin()
 
 ""Plugs Here
-Plug 'plasticboy/vim-markdown'
-Plug 'pangloss/vim-javascript'
-Plug 'moll/vim-node'
-Plug 'rust-lang/rust.vim'
+Plug 'sheerun/vim-polyglot'
 Plug 'jaawerth/neomake-local-eslint-first'
 Plug 'Chiel92/vim-autoformat'
 Plug 'nafarlee/vim-xsodata'
 Plug 'nafarlee/vim-hdbsequence'
 Plug 'nafarlee/vim-hdbdd'
-Plug 'ElmCast/elm-vim'
 
 Plug 'chriskempson/base16-vim'
 Plug 'bling/vim-airline'
