@@ -36,8 +36,6 @@ let g:airline_extensions = []
 
 "neomake
 autocmd! BufWritePost * Neomake
-let g:neomake_rust_enabled_makers = []
-autocmd! BufWritePost *.rs :Neomake! cargo
 
 
 "sensibles
