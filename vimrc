@@ -3,7 +3,6 @@ call plug#begin()
 ""Plugs Here
 Plug 'sheerun/vim-polyglot'
 Plug 'jaawerth/neomake-local-eslint-first'
-Plug 'Chiel92/vim-autoformat'
 Plug 'nafarlee/vim-xsodata'
 Plug 'nafarlee/vim-hdbsequence'
 Plug 'nafarlee/vim-hdbdd'
@@ -15,7 +14,6 @@ Plug 'whatyouhide/vim-gotham'
 Plug 'dracula/vim'
 
 Plug 'benekastah/neomake'
-Plug 'godlygeek/tabular'
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
