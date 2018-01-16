@@ -2,7 +2,6 @@ call plug#begin()
 
 ""Plugs Here
 Plug 'sheerun/vim-polyglot'
-Plug 'jaawerth/neomake-local-eslint-first'
 Plug 'nafarlee/vim-xsodata'
 Plug 'nafarlee/vim-hdbsequence'
 Plug 'nafarlee/vim-hdbdd'
@@ -13,13 +12,13 @@ Plug 'morhetz/gruvbox'
 Plug 'whatyouhide/vim-gotham'
 Plug 'dracula/vim'
 
-Plug 'benekastah/neomake'
 Plug 'tpope/vim-fugitive'
 Plug 'Raimondi/delimitMate'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'airblade/vim-gitgutter'
+Plug 'w0rp/ale'
 
 call plug#end()
 
@@ -31,10 +30,6 @@ nmap <C-o> :Ag<CR>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_extensions = []
-
-"neomake
-autocmd! BufWritePost * Neomake
-
 
 "sensibles
 set encoding=utf-8
