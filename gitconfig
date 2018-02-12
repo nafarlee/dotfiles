@@ -1,0 +1,10 @@
+[core]
+	editor = nvim
+[user]
+	name = Nicholas Farley
+	email = nicholasafarley@gmail.com
+[rerere]
+	enabled = true
+[diff]
+	indentHeuristic = on
+	algorithm = patience
