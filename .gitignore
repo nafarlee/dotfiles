@@ -16,4 +16,5 @@ Session.vim
 
 fish/conf.d
 fish/fishd.*
-
+fish/completions
+fish/functions/fisher.fish
