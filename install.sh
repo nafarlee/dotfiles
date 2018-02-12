@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-dotfiles_dir=$(dirname $(realpath $0))
+dotfiles_dir="$PWD"
 
 mkdir -p "$HOME/.config"
 ln -s "$dotfiles_dir/nvim" "$HOME/.config/nvim"
