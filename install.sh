@@ -8,4 +8,3 @@ ln -s "$dotfiles_dir/fish" "$HOME/.config/fish"
 
 chsh -s "$(which fish)"
 fish -c 'curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher'
-fish -c 'fisher z omf/theme-bobthefish'
