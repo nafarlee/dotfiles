@@ -1,4 +1,5 @@
-vim/plugged
+nvim/plugged
+nvim/autoload
 vim/autoload/plug.vim.old
 vim/init.vim
 vim/spell
