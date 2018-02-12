@@ -13,3 +13,6 @@ Session.vim
 .netrwhist
 *~
 
+fish/conf.d
+fish/fishd.*
+
