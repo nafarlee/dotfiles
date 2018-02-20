@@ -36,7 +36,6 @@ set encoding=utf-8
 set ignorecase
 set number
 set hidden
-set nocompatible
 set incsearch
 set backspace=indent,eol,start
 set hlsearch
