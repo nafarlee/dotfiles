@@ -56,7 +56,7 @@ set nowrap
 "visual
 set laststatus=2
 set showmatch
-set colorcolumn=80
+set colorcolumn=100
 set cursorline
 
 set t_Co=256
