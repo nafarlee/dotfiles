@@ -25,6 +25,7 @@ call plug#end()
 "fzf
 nmap <C-p> :Files<CR>
 nmap <C-o> :Ag<CR>
+nmap <C-i> :GFiles<CR>
 
 "vim-airline
 let g:airline#extensions#tabline#enabled = 1
