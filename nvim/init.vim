@@ -19,6 +19,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
+Plug 'tpope/vim-fireplace'
 
 call plug#end()
 
