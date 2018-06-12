@@ -62,7 +62,7 @@ set colorcolumn=80
 set cursorline
 
 set t_Co=256
-colorscheme gruvbox
+colorscheme dracula
 set background=dark
 let g:rehash256 = 1
 
