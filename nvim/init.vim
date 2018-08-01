@@ -17,8 +17,8 @@ Plug 'Raimondi/delimitMate'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
-Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
+Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
 call plug#end()
