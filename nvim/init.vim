@@ -2,24 +2,15 @@ call plug#begin()
 
 ""Plugs Here
 Plug 'sheerun/vim-polyglot'
-Plug 'nafarlee/vim-xsodata'
-Plug 'nafarlee/vim-hdbsequence'
-Plug 'nafarlee/vim-hdbdd'
 
-Plug 'chriskempson/base16-vim'
 Plug 'bling/vim-airline'
-Plug 'morhetz/gruvbox'
-Plug 'whatyouhide/vim-gotham'
 Plug 'dracula/vim'
 
-Plug 'tpope/vim-fugitive'
-Plug 'Raimondi/delimitMate'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'w0rp/ale'
 Plug 'mhinz/vim-signify'
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
 call plug#end()
 
