@@ -3,7 +3,7 @@ call plug#begin()
 ""Plugs Here
 Plug 'sheerun/vim-polyglot'
 
-Plug 'bling/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'dracula/vim'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
@@ -46,8 +46,13 @@ set softtabstop=2
 set nowrap
 
 
+"lightline
+let g:lightline = { 'colorscheme': 'one' }
+
+
 "visual
 set laststatus=2
+set noshowmode
 set showmatch
 set colorcolumn=100
 set cursorline
