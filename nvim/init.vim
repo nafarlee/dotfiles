@@ -14,6 +14,10 @@ Plug 'mhinz/vim-signify'
 
 call plug#end()
 
+"ale
+let g:ale_linters = {'rust': ['cargo']}
+let g:ale_rust_cargo_use_check = 1
+
 "fzf
 nmap <C-p> :Files<CR>
 nmap <C-o> :Ag<CR>
