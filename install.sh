@@ -25,4 +25,6 @@ if [ ! -e "$HOME/.config/fish/functions/fisher.fish" ]; then
                "--create-dirs https://git.io/fisher"
 fi
 
-chsh -s "$(which fish)"
+if [ "$(basename "$SHELL")" != 'fish' ]; then
+  chsh -s "$(which fish)"
+fi
