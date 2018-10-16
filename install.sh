@@ -1,23 +1,23 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
-dotfiles_dir="$PWD"
+g_dir="$PWD"
 mkdir -p "$HOME/.config"
 
 if [ ! -e "$HOME/.config/nvim" ]; then
-  ln -s "$dotfiles_dir/nvim" "$HOME/.config/nvim"
+  ln -s "$g_dir/nvim" "$HOME/.config/nvim"
 fi
 
 if [ ! -e "$HOME/.config/fish" ]; then
-  ln -s "$dotfiles_dir/fish" "$HOME/.config/fish"
+  ln -s "$g_dir/fish" "$HOME/.config/fish"
 fi
 
 if [ ! -e "$HOME/.gitconfig" ]; then
-  ln -s "$dotfiles_dir/gitconfig" "$HOME/.gitconfig"
+  ln -s "$g_dir/gitconfig" "$HOME/.gitconfig"
 fi
 
 if [ ! -e "$HOME/.tmux.conf" ]; then
-  ln -s "$dotfiles_dir/tmux.conf" "$HOME/.tmux.conf"
+  ln -s "$g_dir/tmux.conf" "$HOME/.tmux.conf"
 fi
 
 if [ ! -e "$HOME/.config/fish/functions/fisher.fish" ]; then
