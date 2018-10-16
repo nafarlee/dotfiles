@@ -1,12 +1,28 @@
 #!/usr/bin/env bash
+set -euxo pipefail
 
 dotfiles_dir="$PWD"
-
 mkdir -p "$HOME/.config"
-ln -s "$dotfiles_dir/nvim" "$HOME/.config/nvim"
-ln -s "$dotfiles_dir/fish" "$HOME/.config/fish"
-ln -s "$dotfiles_dir/gitconfig" "$HOME/.gitconfig"
-ln -s "$dotfiles_dir/tmux.conf" "$HOME/.tmux.conf"
+
+if [ ! -e "$HOME/.config/nvim" ]; then
+  ln -s "$dotfiles_dir/nvim" "$HOME/.config/nvim"
+fi
+
+if [ ! -e "$HOME/.config/fish" ]; then
+  ln -s "$dotfiles_dir/fish" "$HOME/.config/fish"
+fi
+
+if [ ! -e "$HOME/.gitconfig" ]; then
+  ln -s "$dotfiles_dir/gitconfig" "$HOME/.gitconfig"
+fi
+
+if [ ! -e "$HOME/.tmux.conf" ]; then
+  ln -s "$dotfiles_dir/tmux.conf" "$HOME/.tmux.conf"
+fi
+
+if [ ! -e "$HOME/.config/fish/functions/fisher.fish" ]; then
+  fish -c "curl -Lo ~/.config/fish/functions/fisher.fish" \
+               "--create-dirs https://git.io/fisher"
+fi
 
 chsh -s "$(which fish)"
-fish -c 'curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher'
