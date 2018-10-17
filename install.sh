@@ -21,8 +21,7 @@ if [ ! -e "$HOME/.tmux.conf" ]; then
 fi
 
 if [ ! -e "$HOME/.config/fish/functions/fisher.fish" ]; then
-  fish -c "curl -Lo ~/.config/fish/functions/fisher.fish" \
-               "--create-dirs https://git.io/fisher"
+  fish -c "curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher"
 fi
 
 if [ "$(basename "$SHELL")" != 'fish' ]; then
