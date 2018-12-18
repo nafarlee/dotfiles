@@ -58,7 +58,7 @@ let g:lightline = { 'colorscheme': 'one' }
 set laststatus=2
 set noshowmode
 set showmatch
-set colorcolumn=100
+set colorcolumn=80
 set cursorline
 
 set t_Co=256
