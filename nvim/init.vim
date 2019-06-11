@@ -4,7 +4,7 @@ call plug#begin()
 Plug 'sheerun/vim-polyglot'
 
 Plug 'itchyny/lightline.vim'
-Plug 'dracula/vim'
+Plug 'morhetz/gruvbox'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
@@ -62,7 +62,7 @@ set colorcolumn=80
 set cursorline
 
 set t_Co=256
-colorscheme dracula
+colorscheme gruvbox
 set background=dark
 let g:rehash256 = 1
 
