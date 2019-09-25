@@ -6,3 +6,5 @@ end
 if test -d $HOME/.cargo/bin
   set -x PATH $PATH $HOME/.cargo/bin
 end
+
+eval (starship init fish)
