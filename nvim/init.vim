@@ -21,7 +21,7 @@ let g:ale_rust_cargo_use_check = 1
 
 "fzf
 nmap <C-p> :Files<CR>
-nmap <C-o> :Ag<CR>
+nmap <C-o> :Rg<CR>
 nmap <C-i> :GFiles<CR>
 
 "vim-airline
