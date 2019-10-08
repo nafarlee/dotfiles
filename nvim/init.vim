@@ -11,6 +11,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'w0rp/ale'
 Plug 'mhinz/vim-signify'
+Plug 'godlygeek/tabular'
 
 call plug#end()
 
