@@ -5,6 +5,7 @@ Plug 'sheerun/vim-polyglot'
 
 Plug 'itchyny/lightline.vim'
 Plug 'morhetz/gruvbox'
+Plug 'norcalli/nvim-colorizer.lua'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
@@ -126,4 +127,9 @@ if has('nvim')
         set termguicolors
 	tnoremap jk <C-\><C-n>
 	tnoremap kj <C-\><C-n>
+endif
+
+if has('lua')
+        "nvim-colorizer
+        lua require'colorizer'.setup()
 endif
