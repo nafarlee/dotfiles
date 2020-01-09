@@ -13,6 +13,8 @@ Plug 'tpope/vim-vinegar'
 Plug 'w0rp/ale'
 Plug 'mhinz/vim-signify'
 Plug 'godlygeek/tabular'
+Plug 'guns/vim-sexp', { 'for': 'clojure' }
+Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 
 call plug#end()
 
