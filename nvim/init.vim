@@ -15,6 +15,7 @@ Plug 'mhinz/vim-signify'
 Plug 'godlygeek/tabular'
 Plug 'guns/vim-sexp', { 'for': 'clojure' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
+Plug 'jjo/vim-cue'
 
 call plug#end()
 
