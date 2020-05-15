@@ -1,10 +1,10 @@
-UNIX Dotfiles
-=============
+# Dotfiles
 
-Vim configuration files and other dotfiles. 
+## Pre-requisites
 
-Installation
-------------
-
-1. Clone the repository somewhere.
-2. Run the install script. Symlinks the vim files to your home directory.
+- fish
+- tmux
+- neovim
+- git
+- starship
+- curl
