@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-set -euxo pipefail
+#!/usr/bin/env sh
+set -eux
 
 g_dir="$PWD"
 mkdir -p "$HOME/.config"
@@ -25,5 +25,5 @@ if [ ! -e "$HOME/.config/fish/functions/fisher.fish" ]; then
 fi
 
 if [ "$(basename "$SHELL")" != 'fish' ]; then
-  chsh -s "$(which fish)"
+  chsh -s "$(command -v fish)"
 fi
