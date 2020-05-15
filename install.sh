@@ -1,29 +1,23 @@
 #!/usr/bin/env sh
 set -eux
 
-g_dir="$PWD"
+dir="$PWD"
 mkdir -p "$HOME/.config"
 
-if [ ! -e "$HOME/.config/nvim" ]; then
-  ln -s "$g_dir/nvim" "$HOME/.config/nvim"
-fi
+nvim_dir="$HOME/.config/nvim"
+rm -rf "$nvim_dir"
+ln -s "$dir/nvim" "$nvim_dir"
 
-if [ ! -e "$HOME/.config/fish" ]; then
-  ln -s "$g_dir/fish" "$HOME/.config/fish"
-fi
+fish_dir="$HOME/.config/fish"
+rm -rf "$fish_dir"
+ln -s "$dir/fish" "$fish_dir"
 
-if [ ! -e "$HOME/.gitconfig" ]; then
-  ln -s "$g_dir/gitconfig" "$HOME/.gitconfig"
-fi
+gitconfig_path="$HOME/.gitconfig"
+rm -f "$gitconfig_path"
+ln -s "$dir/gitconfig" "$gitconfig_path"
 
-if [ ! -e "$HOME/.tmux.conf" ]; then
-  ln -s "$g_dir/tmux.conf" "$HOME/.tmux.conf"
-fi
+tmux_path="$HOME/.tmux.conf"
+rm -f "$tmux_path"
+ln -s "$dir/tmux.conf" "$tmux_path"
 
-if [ ! -e "$HOME/.config/fish/functions/fisher.fish" ]; then
-  fish -c "curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher"
-fi
-
-if [ "$(basename "$SHELL")" != 'fish' ]; then
-  chsh -s "$(command -v fish)"
-fi
+chsh -s "$(command -v fish)"
