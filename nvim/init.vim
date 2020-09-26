@@ -4,7 +4,7 @@ call plug#begin()
 Plug 'sheerun/vim-polyglot'
 
 Plug 'itchyny/lightline.vim'
-Plug 'morhetz/gruvbox'
+Plug 'embark-theme/vim', { 'as': 'embark' }
 Plug 'norcalli/nvim-colorizer.lua'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
@@ -67,7 +67,7 @@ set colorcolumn=100
 set cursorline
 
 set t_Co=256
-colorscheme gruvbox
+colorscheme embark
 set background=dark
 let g:rehash256 = 1
 
