@@ -16,10 +16,6 @@ gitconfig_path="$HOME/.gitconfig"
 rm -f "$gitconfig_path"
 ln -s "$dir/gitconfig" "$gitconfig_path"
 
-tmux_path="$HOME/.tmux.conf"
-rm -f "$tmux_path"
-ln -s "$dir/tmux.conf" "$tmux_path"
-
 kitty_path="$HOME/.config/kitty/kitty.conf"
 mkdir -p "$(dirname "$kitty_path")"
 rm -f "$kitty_path"
