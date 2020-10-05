@@ -17,8 +17,12 @@ Plug 'godlygeek/tabular'
 Plug 'guns/vim-sexp', { 'for': 'clojure' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 Plug 'jjo/vim-cue'
+Plug 'luochen1990/rainbow'
 
 call plug#end()
+
+"rainbow
+let g:rainbow_active = 1
 
 "ale
 let g:ale_linters = {'rust': ['cargo']}
