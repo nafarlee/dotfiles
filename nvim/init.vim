@@ -2,6 +2,7 @@ call plug#begin()
 
 ""Plugs Here
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-fireplace', { 'for' : 'clojure' }
 
 Plug 'itchyny/lightline.vim'
 Plug 'embark-theme/vim', { 'as': 'embark' }
