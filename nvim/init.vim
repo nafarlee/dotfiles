@@ -5,7 +5,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fireplace', { 'for' : 'clojure' }
 
 Plug 'itchyny/lightline.vim'
-Plug 'embark-theme/vim', { 'as': 'embark' }
+Plug 'joshdick/onedark.vim'
 Plug 'norcalli/nvim-colorizer.lua'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
@@ -72,7 +72,7 @@ set colorcolumn=100
 set cursorline
 
 set t_Co=256
-colorscheme embark
+colorscheme onedark
 set background=dark
 let g:rehash256 = 1
 
