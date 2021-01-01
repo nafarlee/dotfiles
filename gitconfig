@@ -8,3 +8,5 @@
 [diff]
 	indentHeuristic = on
 	algorithm = patience
+[pull]
+	rebase = true
