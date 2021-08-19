@@ -19,7 +19,8 @@ require "paq" {
 }
 
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { 'lua', 'vim' },
+  ensure_installed = "all",
+  ignore_install = { "haskell" },
   highlight = { enable = true },
   incremental_selection = { enable = true },
   textobjects = { enable = true },
