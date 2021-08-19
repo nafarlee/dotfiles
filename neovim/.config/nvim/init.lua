@@ -1,7 +1,5 @@
 local fn = vim.fn
-local cmd = vim.cmd
 local map = vim.api.nvim_set_keymap
-local g = vim.g
 local opt = vim.opt
 
 local install_path = fn.stdpath('data') .. '/site/pack/paqs/start/paq-nvim'
@@ -26,7 +24,7 @@ require'nvim-treesitter.configs'.setup {
   textobjects = { enable = true },
 }
 
-cmd 'colorscheme onedark'
+vim.cmd 'colorscheme onedark'
 opt.number = true
 opt.wrap = false
 opt.ignorecase = true
