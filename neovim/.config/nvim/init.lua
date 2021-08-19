@@ -33,6 +33,7 @@ opt.ignorecase = true
 opt.expandtab = true
 opt.softtabstop = 2
 opt.shiftwidth = 2
+opt.termguicolors = true
 
 vim.g.mapleader = ' '
 map('n', '<Space>', '', {})
