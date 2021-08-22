@@ -14,6 +14,7 @@ require "paq" {
   'dense-analysis/ale';
   'nvim-telescope/telescope.nvim';
   'nvim-lua/plenary.nvim';
+  'mhinz/vim-signify';
 }
 
 require'nvim-treesitter.configs'.setup {
@@ -32,6 +33,7 @@ opt.expandtab = true
 opt.softtabstop = 2
 opt.shiftwidth = 2
 opt.termguicolors = true
+opt.updatetime = 100
 
 vim.g.mapleader = ' '
 map('n', '<Space>', '', {})
