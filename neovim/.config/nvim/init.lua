@@ -33,6 +33,7 @@ opt.expandtab = true
 opt.softtabstop = 2
 opt.shiftwidth = 2
 opt.termguicolors = true
+opt.colorcolumn = '100'
 opt.updatetime = 100
 
 vim.g.mapleader = ' '
