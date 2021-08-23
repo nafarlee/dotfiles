@@ -10,7 +10,7 @@ require "paq" {
   'savq/paq-nvim';
   'itchyny/lightline.vim';
   'joshdick/onedark.vim';
-  'nvim-treesitter/nvim-treesitter';
+  {'nvim-treesitter/nvim-treesitter', branch="0.5-compat"};
   'dense-analysis/ale';
   'nvim-telescope/telescope.nvim';
   'nvim-lua/plenary.nvim';
