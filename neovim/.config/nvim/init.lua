@@ -15,6 +15,7 @@ require "paq" {
   'nvim-telescope/telescope.nvim';
   'nvim-lua/plenary.nvim';
   'mhinz/vim-signify';
+  'jiangmiao/auto-pairs';
 }
 
 require'nvim-treesitter.configs'.setup {
