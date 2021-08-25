@@ -8,7 +8,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 require "paq" {
   'savq/paq-nvim';
-  'itchyny/lightline.vim';
+  'hoob3rt/lualine.nvim';
   'joshdick/onedark.vim';
   {'nvim-treesitter/nvim-treesitter', branch="0.5-compat"};
   'dense-analysis/ale';
@@ -25,6 +25,8 @@ require'nvim-treesitter.configs'.setup {
   incremental_selection = { enable = true },
   textobjects = { enable = true },
 }
+
+require'lualine'.setup()
 
 vim.cmd 'colorscheme onedark'
 opt.number = true
