@@ -9,13 +9,13 @@ end
 require "paq" {
   'savq/paq-nvim';
   'hoob3rt/lualine.nvim';
-  'joshdick/onedark.vim';
   {'nvim-treesitter/nvim-treesitter', branch="0.5-compat"};
   'dense-analysis/ale';
   'nvim-telescope/telescope.nvim';
   'nvim-lua/plenary.nvim';
   'mhinz/vim-signify';
   'jiangmiao/auto-pairs';
+  'bluz71/vim-moonfly-colors';
 }
 
 require'nvim-treesitter.configs'.setup {
@@ -27,9 +27,9 @@ require'nvim-treesitter.configs'.setup {
   indent = { enable = true }
 }
 
-require'lualine'.setup()
+require'lualine'.setup({options = {theme = 'moonfly'}})
 
-vim.cmd 'colorscheme onedark'
+vim.cmd 'colorscheme moonfly'
 opt.number = true
 opt.wrap = false
 opt.ignorecase = true
