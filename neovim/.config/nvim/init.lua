@@ -16,7 +16,11 @@ require "paq" {
   'mhinz/vim-signify',
   'jiangmiao/auto-pairs',
   'sainnhe/everforest',
+  'Olical/conjure',
 }
+
+vim.g['conjure#client#scheme#stdio#command'] = 'csi -quiet -:c'
+vim.g['conjure#client#scheme#stdio#prompt_pattern'] = "\n-#;%d-> "
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "all",
