@@ -15,7 +15,7 @@ require "paq" {
   'nvim-lua/plenary.nvim';
   'mhinz/vim-signify';
   'jiangmiao/auto-pairs';
-  'bluz71/vim-moonfly-colors';
+  'sainnhe/everforest';
 }
 
 require'nvim-treesitter.configs'.setup {
@@ -27,9 +27,9 @@ require'nvim-treesitter.configs'.setup {
   indent = { enable = true }
 }
 
-require'lualine'.setup({options = {theme = 'moonfly'}})
+require'lualine'.setup()
 
-vim.cmd 'colorscheme moonfly'
+vim.cmd 'colorscheme everforest'
 opt.number = true
 opt.wrap = false
 opt.ignorecase = true
