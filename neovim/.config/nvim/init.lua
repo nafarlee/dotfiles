@@ -7,15 +7,15 @@ if fn.empty(fn.glob(install_path)) > 0 then
   fn.system({'git', 'clone', '--depth=1', 'https://github.com/savq/paq-nvim.git', install_path})
 end
 require "paq" {
-  'savq/paq-nvim';
-  'hoob3rt/lualine.nvim';
-  {'nvim-treesitter/nvim-treesitter', branch="0.5-compat"};
-  'dense-analysis/ale';
-  'nvim-telescope/telescope.nvim';
-  'nvim-lua/plenary.nvim';
-  'mhinz/vim-signify';
-  'jiangmiao/auto-pairs';
-  'sainnhe/everforest';
+  'savq/paq-nvim',
+  'hoob3rt/lualine.nvim',
+  {'nvim-treesitter/nvim-treesitter', branch="0.5-compat"},
+  'dense-analysis/ale',
+  'nvim-telescope/telescope.nvim',
+  'nvim-lua/plenary.nvim',
+  'mhinz/vim-signify',
+  'jiangmiao/auto-pairs',
+  'sainnhe/everforest',
 }
 
 require'nvim-treesitter.configs'.setup {
