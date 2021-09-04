@@ -17,6 +17,7 @@ require "paq" {
   'jiangmiao/auto-pairs',
   'sainnhe/everforest',
   'Olical/conjure',
+  'digitaltoad/vim-pug',
 }
 
 vim.g['conjure#client#scheme#stdio#command'] = 'csi -quiet -:c'
