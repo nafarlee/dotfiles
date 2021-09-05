@@ -18,6 +18,7 @@ require "paq" {
   'sainnhe/everforest',
   'Olical/conjure',
   'digitaltoad/vim-pug',
+  'bhurlow/vim-parinfer',
 }
 
 vim.g['conjure#client#scheme#stdio#command'] = 'csi -quiet -:c'
@@ -57,4 +58,4 @@ map('n', '<Right>', ':wincmd l<CR>', {})
 map('n', '<Leader>n', ':bn<CR>', {})
 map('n', '<Leader>.', ':vertical resize -10<CR>', {})
 map('n', '<Leader>,', ':vertical resize +10<CR>', {})
-map('n', '<tab>', '<cmd>Telescope git_files<CR>', {})
+map('n', '<C-p>', '<cmd>Telescope git_files<CR>', {})
