@@ -59,3 +59,11 @@ map('n', '<Leader>n', ':bn<CR>', {})
 map('n', '<Leader>.', ':vertical resize -10<CR>', {})
 map('n', '<Leader>,', ':vertical resize +10<CR>', {})
 map('n', '<C-p>', '<cmd>Telescope git_files<CR>', {})
+
+-- Time-based color switching
+local hour = tonumber(os.date("%H"))
+if hour > 6 and hour < 19 then
+  opt.background = 'light'
+else
+  opt.background = 'dark'
+end
