@@ -6,6 +6,5 @@
 - neovim
 - git
 - starship
-- curl
 - kitty
 - fira code
