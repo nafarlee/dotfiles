@@ -19,6 +19,7 @@ require "paq" {
   'Olical/conjure',
   'digitaltoad/vim-pug',
   'bhurlow/vim-parinfer',
+  'jjo/vim-cue',
 }
 
 vim.g['conjure#client#scheme#stdio#command'] = 'csi -quiet -:c'
