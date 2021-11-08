@@ -61,10 +61,11 @@ map('n', '<Leader>.', ':vertical resize -10<CR>', {})
 map('n', '<Leader>,', ':vertical resize +10<CR>', {})
 map('n', '<C-p>', '<cmd>Telescope git_files<CR>', {})
 
--- Time-based color switching
-local hour = tonumber(os.date("%H"))
-if hour > 6 and hour < 19 then
-  opt.background = 'light'
-else
-  opt.background = 'dark'
+-- System-based color switching
+if fn.has("mac") == 1 then
+  if fn.system("defaults read -g AppleInterfaceStyle"):find("Dark") then
+    opt.background = 'dark'
+  else
+    opt.background = 'light'
+  end
 end
