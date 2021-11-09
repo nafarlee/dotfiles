@@ -62,16 +62,16 @@ map('n', '<Leader>,', ':vertical resize +10<CR>', {})
 map('n', '<C-p>', '<cmd>Telescope git_files<CR>', {})
 
 -- System-based color switching
-if fn.has("mac") == 1 then
-  if fn.system("defaults read -g AppleInterfaceStyle"):find("Dark") then
-    opt.background = 'dark'
-  else
-    opt.background = 'light'
+local function is_dark()
+  if 1 == fn.has("mac") then
+    return fn.system("defaults read -g AppleInterfaceStyle"):find("Dark")
+  elseif '' ~= fn.system('command -v gsettings') then
+    return fn.system('gsettings get org.gnome.desktop.interface gtk-theme'):find('dark')
   end
-elseif '' ~= fn.system('command -v gsettings') then
-  if fn.system('gsettings get org.gnome.desktop.interface gtk-theme'):find('dark') then
-    opt.background = 'dark'
-  else
-    opt.background = 'light'
-  end
+end
+
+if is_dark() then
+  opt.background = 'dark'
+else
+  opt.background = 'light'
 end
