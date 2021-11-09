@@ -68,4 +68,10 @@ if fn.has("mac") == 1 then
   else
     opt.background = 'light'
   end
+elseif '' ~= fn.system('command -v gsettings') then
+  if fn.system('gsettings get org.gnome.desktop.interface gtk-theme'):find('dark') then
+    opt.background = 'dark'
+  else
+    opt.background = 'light'
+  end
 end
