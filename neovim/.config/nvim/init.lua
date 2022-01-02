@@ -65,6 +65,8 @@ map('n', '<C-p>', '<cmd>Telescope git_files<CR>', {})
 local function is_dark()
   if 1 == fn.has("mac") then
     return fn.system("defaults read -g AppleInterfaceStyle"):find("Dark")
+  elseif '' ~= fn.system('command -v xfconf-query') then
+    return fn.system('xfconf-query -c xsettings -p /Net/ThemeName'):find('dark')
   elseif '' ~= fn.system('command -v gsettings') then
     return fn.system('gsettings get org.gnome.desktop.interface gtk-theme'):find('dark')
   end
