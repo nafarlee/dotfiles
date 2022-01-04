@@ -24,8 +24,7 @@ require "paq" {
 }
 
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = "all",
-  ignore_install = { "haskell" },
+  ensure_installed = "maintained",
   highlight = { enable = true },
   incremental_selection = { enable = true },
   textobjects = { enable = true },
