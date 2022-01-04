@@ -18,7 +18,6 @@ require "paq" {
   'sainnhe/everforest',
   'Olical/conjure',
   'bhurlow/vim-parinfer',
-  'jjo/vim-cue',
   'hashicorp/sentinel.vim',
 }
 
