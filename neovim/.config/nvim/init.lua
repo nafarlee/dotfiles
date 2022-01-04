@@ -20,6 +20,7 @@ require "paq" {
   'digitaltoad/vim-pug',
   'bhurlow/vim-parinfer',
   'jjo/vim-cue',
+  'hashicorp/sentinel.vim',
 }
 
 vim.g['conjure#client#scheme#stdio#command'] = 'csi -quiet -:c'
