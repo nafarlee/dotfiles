@@ -7,7 +7,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
   packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
 end
 require('packer').startup(function(use)
-  use 'hoob3rt/lualine.nvim'
+  use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
   use 'dense-analysis/ale'
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-lua/plenary.nvim'
