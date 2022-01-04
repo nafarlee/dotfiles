@@ -2,24 +2,26 @@ local fn = vim.fn
 local map = vim.api.nvim_set_keymap
 local opt = vim.opt
 
-local install_path = fn.stdpath('data') .. '/site/pack/paqs/start/paq-nvim'
+local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
-  fn.system({'git', 'clone', '--depth=1', 'https://github.com/savq/paq-nvim.git', install_path})
+  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
 end
-require "paq" {
-  'savq/paq-nvim',
-  'hoob3rt/lualine.nvim',
-  {'nvim-treesitter/nvim-treesitter', branch="0.5-compat"},
-  'dense-analysis/ale',
-  'nvim-telescope/telescope.nvim',
-  'nvim-lua/plenary.nvim',
-  'mhinz/vim-signify',
-  'jiangmiao/auto-pairs',
-  'sainnhe/everforest',
-  'Olical/conjure',
-  'bhurlow/vim-parinfer',
-  'hashicorp/sentinel.vim',
-}
+require('packer').startup(function(use)
+  use 'hoob3rt/lualine.nvim'
+  use 'dense-analysis/ale'
+  use 'nvim-telescope/telescope.nvim'
+  use 'nvim-lua/plenary.nvim'
+  use 'mhinz/vim-signify'
+  use 'jiangmiao/auto-pairs'
+  use 'sainnhe/everforest'
+  use 'Olical/conjure'
+  use 'bhurlow/vim-parinfer'
+  use 'hashicorp/sentinel.vim'
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  if packer_bootstrap then
+    require('packer').sync()
+  end
+end)
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "maintained",
