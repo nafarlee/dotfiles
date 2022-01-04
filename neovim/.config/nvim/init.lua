@@ -17,7 +17,6 @@ require "paq" {
   'jiangmiao/auto-pairs',
   'sainnhe/everforest',
   'Olical/conjure',
-  'digitaltoad/vim-pug',
   'bhurlow/vim-parinfer',
   'jjo/vim-cue',
   'hashicorp/sentinel.vim',
