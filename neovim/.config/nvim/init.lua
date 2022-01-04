@@ -8,7 +8,8 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
+  use 'kyazdani42/nvim-web-devicons'
+  use 'nvim-lualine/lualine.nvim'
   use 'dense-analysis/ale'
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   use 'mhinz/vim-signify'
