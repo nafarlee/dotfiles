@@ -23,9 +23,6 @@ require "paq" {
   'hashicorp/sentinel.vim',
 }
 
-vim.g['conjure#client#scheme#stdio#command'] = 'csi -quiet -:c'
-vim.g['conjure#client#scheme#stdio#prompt_pattern'] = "\n-#;%d-> "
-
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "all",
   ignore_install = { "haskell" },
