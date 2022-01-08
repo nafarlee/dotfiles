@@ -59,13 +59,12 @@ map('n', '<C-p>', '<cmd>Telescope git_files<CR>', {})
 
 -- System-based color switching
 local function is_dark()
-  if 1 == fn.has("mac") then
-    return fn.system("defaults read -g AppleInterfaceStyle"):find("Dark")
-  elseif '' ~= fn.system('command -v xfconf-query') then
-    return fn.system('xfconf-query -c xsettings -p /Net/ThemeName'):find('dark')
-  elseif '' ~= fn.system('command -v gsettings') then
-    return fn.system('gsettings get org.gnome.desktop.interface gtk-theme'):find('dark')
-  end
+  return (1 == fn.has("mac")
+          and fn.system("defaults read -g AppleInterfaceStyle"):find("Dark"))
+      or (fn.system('command -v xfconf-query')
+          and fn.system('xfconf-query -c xsettings -p /Net/ThemeName'):find('dark'))
+      or (fn.system('command -v gsettings')
+          and fn.system('gsettings get org.gnome.desktop.interface gtk-theme'):find('dark'))
 end
 
 if is_dark() then
