@@ -17,6 +17,6 @@ if test -f /home/nafarlee/.cache/yay/google-cloud-sdk/pkg/google-cloud-sdk/opt/g
 end
 
 set -x VOLTA_HOME "$HOME/.volta"
-fish_add_path "$VOLTA_HOME/bin"
+set -x PATH "$PATH" "$VOLTA_HOME/bin"
 
 eval (starship init fish)
