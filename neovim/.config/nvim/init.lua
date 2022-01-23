@@ -46,6 +46,7 @@ opt.updatetime = 100
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
+vim.g.netrw_banner = 0
 map('n', '<Space>', '', {})
 map('i', 'jk', '<esc>', {})
 map('i', 'kj', '<esc>', {})
