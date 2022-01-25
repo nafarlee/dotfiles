@@ -7,7 +7,7 @@
 	enabled = true
 [diff]
 	indentHeuristic = on
-	algorithm = patience
+	algorithm = histogram
 [pull]
 	rebase = true
 [merge]
