@@ -10,3 +10,5 @@
 	algorithm = patience
 [pull]
 	rebase = true
+[merge]
+	conflictStyle = diff3
