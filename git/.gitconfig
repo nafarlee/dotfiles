@@ -8,6 +8,7 @@
 [diff]
 	indentHeuristic = on
 	algorithm = histogram
+	colorMoved = default
 [pull]
 	rebase = true
 [merge]
