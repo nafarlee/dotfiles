@@ -4,14 +4,21 @@ local opt = vim.opt
 
 local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
-  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+  packer_bootstrap = fn.system({
+    'git',
+    'clone',
+    '--depth',
+    '1',
+    'https://github.com/wbthomason/packer.nvim',
+    install_path,
+  })
 end
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
   use 'dense-analysis/ale'
-  use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
+  use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
   use 'mhinz/vim-signify'
   use 'jiangmiao/auto-pairs'
   use 'sainnhe/everforest'
@@ -61,12 +68,15 @@ map('n', '<C-p>', '<cmd>Telescope git_files<CR>', {})
 
 -- System-based color switching
 local function is_dark()
+  local mac_sh = 'defaults read -g AppleInterfaceStyle'
+  local xfce_sh = 'xfconf-query -c xsettings -p /Net/ThemeName'
+  local gnome_sh = 'gsettings get org.gnome.desktop.interface gtk-theme'
   return (1 == fn.has("mac")
-          and fn.system("defaults read -g AppleInterfaceStyle"):find("Dark"))
+          and fn.system(mac_sh):find("Dark"))
       or (fn.system('command -v xfconf-query')
-          and fn.system('xfconf-query -c xsettings -p /Net/ThemeName'):find('dark'))
+          and fn.system(xfce_sh):find('dark'))
       or (fn.system('command -v gsettings')
-          and fn.system('gsettings get org.gnome.desktop.interface gtk-theme'):find('dark'))
+          and fn.system(gnome_sh):find('dark'))
 end
 
 if is_dark() then
