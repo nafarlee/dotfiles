@@ -19,4 +19,4 @@ end
 set -x VOLTA_HOME "$HOME/.volta"
 set -x PATH "$PATH" "$VOLTA_HOME/bin"
 
-eval (starship init fish)
+starship init fish | source
