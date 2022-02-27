@@ -40,6 +40,8 @@ require'nvim-treesitter.configs'.setup {
 
 require'lualine'.setup()
 
+require'lspconfig'.clojure_lsp.setup{}
+
 vim.cmd 'colorscheme everforest'
 opt.number = true
 opt.wrap = false
