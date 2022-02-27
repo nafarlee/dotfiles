@@ -17,7 +17,7 @@ require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
-  use 'dense-analysis/ale'
+  use 'neovim/nvim-lspconfig'
   use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
   use 'mhinz/vim-signify'
   use 'jiangmiao/auto-pairs'
