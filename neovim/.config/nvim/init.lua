@@ -40,6 +40,11 @@ require'nvim-treesitter.configs'.setup {
 
 require'lualine'.setup()
 
+local on_attach = function(client, buffnr)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', {})
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', {})
+end
+
 require'lspconfig'.clojure_lsp.setup{}
 
 vim.cmd 'colorscheme everforest'
