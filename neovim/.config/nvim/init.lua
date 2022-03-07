@@ -46,6 +46,9 @@ local on_attach = function(client, buffnr)
 end
 
 require'lspconfig'.clojure_lsp.setup{}
+require'lspconfig'.gopls.setup {
+  on_attach = on_attach
+}
 
 vim.cmd 'colorscheme everforest'
 opt.number = true
