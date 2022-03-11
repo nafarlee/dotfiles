@@ -45,6 +45,9 @@ local on_attach = function(client, buffnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', {})
 end
 
+require'lspconfig'.tsserver.setup {
+  on_attach = on_attach
+}
 require'lspconfig'.clojure_lsp.setup{}
 require'lspconfig'.gopls.setup {
   on_attach = on_attach
