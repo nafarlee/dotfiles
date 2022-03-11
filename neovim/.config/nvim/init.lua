@@ -53,6 +53,7 @@ require'lspconfig'.terraformls.setup {
   on_attach = on_attach
 }
 require'lspconfig'.yamlls.setup{}
+require'lspconfig'.jsonls.setup{}
 
 vim.cmd 'colorscheme everforest'
 opt.number = true
