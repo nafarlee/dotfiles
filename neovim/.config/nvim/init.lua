@@ -49,6 +49,9 @@ require'lspconfig'.clojure_lsp.setup{}
 require'lspconfig'.gopls.setup {
   on_attach = on_attach
 }
+require'lspconfig'.terraformls.setup {
+  on_attach = on_attach
+}
 
 vim.cmd 'colorscheme everforest'
 opt.number = true
