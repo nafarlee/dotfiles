@@ -82,6 +82,8 @@ map('n', '<Leader>.', ':vertical resize -10<CR>', {})
 map('n', '<Leader>,', ':vertical resize +10<CR>', {})
 map('n', '<C-p>', '<cmd>Telescope git_files<CR>', {})
 
+vim.api.nvim_command('autocmd FileType go setlocal noexpandtab ts=2')
+
 -- System-based color switching
 local function is_dark()
   local mac_sh = 'defaults read -g AppleInterfaceStyle'
