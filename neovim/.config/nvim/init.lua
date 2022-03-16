@@ -19,6 +19,7 @@ require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   use 'neovim/nvim-lspconfig'
   use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
+  use {'jose-elias-alvarez/null-ls.nvim', requires = {'nvim-lua/plenary.nvim'}}
   use 'mhinz/vim-signify'
   use 'jiangmiao/auto-pairs'
   use 'sainnhe/everforest'
@@ -30,6 +31,12 @@ require('packer').startup(function(use)
     require('packer').sync()
   end
 end)
+
+require('null-ls').setup({
+  sources = {
+    require('null-ls').builtins.diagnostics.shellcheck,
+  },
+})
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "maintained",
