@@ -16,7 +16,8 @@ if test -f /home/nafarlee/.cache/yay/google-cloud-sdk/pkg/google-cloud-sdk/opt/g
   source /home/nafarlee/.cache/yay/google-cloud-sdk/pkg/google-cloud-sdk/opt/google-cloud-sdk/path.fish.inc
 end
 
-set -x VOLTA_HOME "$HOME/.volta"
-set -x PATH "$PATH" "$VOLTA_HOME/bin"
+if test -f $HOME/.asdf/asdf.fish
+  source $HOME/.asdf/asdf.fish
+end
 
 starship init fish | source
