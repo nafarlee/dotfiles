@@ -47,21 +47,11 @@ require'nvim-treesitter.configs'.setup {
 
 require'lualine'.setup()
 
-local on_attach = function(client, buffnr)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', {})
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', {})
-end
-
-require'lspconfig'.tsserver.setup {
-  on_attach = on_attach
-}
+require'lspconfig'.dockerls.setup{}
+require'lspconfig'.tsserver.setup{}
 require'lspconfig'.clojure_lsp.setup{}
-require'lspconfig'.gopls.setup {
-  on_attach = on_attach
-}
-require'lspconfig'.terraformls.setup {
-  on_attach = on_attach
-}
+require'lspconfig'.gopls.setup{}
+require'lspconfig'.terraformls.setup{}
 require'lspconfig'.yamlls.setup{}
 require'lspconfig'.jsonls.setup{}
 require'lspconfig'.eslint.setup{}
