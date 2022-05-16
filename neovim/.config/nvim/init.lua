@@ -22,7 +22,7 @@ require('packer').startup(function(use)
   use {'jose-elias-alvarez/null-ls.nvim', requires = {'nvim-lua/plenary.nvim'}}
   use 'mhinz/vim-signify'
   use 'jiangmiao/auto-pairs'
-  use 'sainnhe/everforest'
+  use 'NLKNguyen/papercolor-theme'
   use 'Olical/conjure'
   use 'bhurlow/vim-parinfer'
   use 'hashicorp/sentinel.vim'
@@ -56,7 +56,7 @@ require'lspconfig'.yamlls.setup{}
 require'lspconfig'.jsonls.setup{}
 require'lspconfig'.eslint.setup{}
 
-vim.cmd 'colorscheme everforest'
+vim.cmd 'colorscheme PaperColor'
 opt.number = true
 opt.wrap = false
 opt.ignorecase = true
