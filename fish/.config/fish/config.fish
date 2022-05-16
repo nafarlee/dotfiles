@@ -20,4 +20,8 @@ if test -f $HOME/.asdf/asdf.fish
   source $HOME/.asdf/asdf.fish
 end
 
+if test -f $HOME/homebrew/opt/asdf/libexec/asdf.fish
+  source $HOME/homebrew/opt/asdf/libexec/asdf.fish
+end
+
 starship init fish | source
