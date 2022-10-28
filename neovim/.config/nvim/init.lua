@@ -22,7 +22,12 @@ require('packer').startup(function(use)
   use 'neovim/nvim-lspconfig'
   use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
   use {'jose-elias-alvarez/null-ls.nvim', requires = {'nvim-lua/plenary.nvim'}}
-  use 'mhinz/vim-signify'
+  use {
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      require('gitsigns').setup()
+    end
+  }
   use 'jiangmiao/auto-pairs'
   use 'Olical/conjure'
   use 'bhurlow/vim-parinfer'
