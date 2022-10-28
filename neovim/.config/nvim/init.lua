@@ -22,7 +22,6 @@ require('packer').startup(function(use)
   use {'jose-elias-alvarez/null-ls.nvim', requires = {'nvim-lua/plenary.nvim'}}
   use 'mhinz/vim-signify'
   use 'jiangmiao/auto-pairs'
-  use 'NLKNguyen/papercolor-theme'
   use 'Olical/conjure'
   use 'bhurlow/vim-parinfer'
   use 'hashicorp/sentinel.vim'
@@ -36,6 +35,16 @@ require('packer').startup(function(use)
       require("lsp_lines").setup()
     end,
   })
+  use {
+      "catppuccin/nvim",
+      as = "catppuccin",
+      config = function()
+          require("catppuccin").setup {
+              flavour = "latte" -- mocha, macchiato, frappe, latte
+          }
+          vim.api.nvim_command "colorscheme catppuccin"
+      end
+  }
   if packer_bootstrap then
     require('packer').sync()
   end
@@ -69,14 +78,12 @@ require'lspconfig'.yamlls.setup{}
 require'lspconfig'.jsonls.setup{}
 require'lspconfig'.eslint.setup{}
 
-vim.cmd 'colorscheme PaperColor'
 opt.number = true
 opt.wrap = false
 opt.ignorecase = true
 opt.expandtab = true
 opt.softtabstop = 2
 opt.shiftwidth = 2
-opt.termguicolors = true
 opt.colorcolumn = '80'
 opt.updatetime = 100
 
