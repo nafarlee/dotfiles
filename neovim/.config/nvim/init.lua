@@ -32,12 +32,12 @@ require('packer').startup(function(use)
   use 'vmchale/dhall-vim'
   use 'google/vim-jsonnet'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-  use({
+  use {
     "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
     config = function()
       require("lsp_lines").setup()
     end,
-  })
+  }
   use {
       "catppuccin/nvim",
       as = "catppuccin",
@@ -61,15 +61,15 @@ require("mason-lspconfig").setup_handlers {
   end
 }
 
-vim.diagnostic.config({
+vim.diagnostic.config {
   virtual_text = false,
-})
+}
 
-require('null-ls').setup({
+require('null-ls').setup {
   sources = {
     require('null-ls').builtins.diagnostics.shellcheck,
   },
-})
+}
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "all",
