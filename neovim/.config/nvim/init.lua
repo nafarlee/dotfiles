@@ -30,10 +30,20 @@ require('packer').startup(function(use)
   use 'vmchale/dhall-vim'
   use 'google/vim-jsonnet'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use({
+    "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+    config = function()
+      require("lsp_lines").setup()
+    end,
+  })
   if packer_bootstrap then
     require('packer').sync()
   end
 end)
+
+vim.diagnostic.config({
+  virtual_text = false,
+})
 
 require('null-ls').setup({
   sources = {
