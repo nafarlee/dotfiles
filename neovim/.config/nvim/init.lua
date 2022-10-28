@@ -26,6 +26,9 @@ require('packer').startup(function(use)
   use 'Olical/conjure'
   use 'bhurlow/vim-parinfer'
   use 'hashicorp/sentinel.vim'
+  use 'towolf/vim-helm'
+  use 'vmchale/dhall-vim'
+  use 'google/vim-jsonnet'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   if packer_bootstrap then
     require('packer').sync()
