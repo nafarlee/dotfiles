@@ -86,7 +86,6 @@ opt.expandtab = true
 opt.softtabstop = 2
 opt.shiftwidth = 2
 opt.colorcolumn = '80'
-opt.updatetime = 100
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
