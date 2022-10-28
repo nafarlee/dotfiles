@@ -17,6 +17,8 @@ require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
   use 'neovim/nvim-lspconfig'
   use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
   use {'jose-elias-alvarez/null-ls.nvim', requires = {'nvim-lua/plenary.nvim'}}
@@ -50,6 +52,14 @@ require('packer').startup(function(use)
   end
 end)
 
+require("mason").setup()
+require("mason-lspconfig").setup()
+require("mason-lspconfig").setup_handlers {
+  function (server_name)
+    require("lspconfig")[server_name].setup {}
+  end
+}
+
 vim.diagnostic.config({
   virtual_text = false,
 })
@@ -68,15 +78,6 @@ require'nvim-treesitter.configs'.setup {
 }
 
 require'lualine'.setup()
-
-require'lspconfig'.dockerls.setup{}
-require'lspconfig'.tsserver.setup{}
-require'lspconfig'.clojure_lsp.setup{}
-require'lspconfig'.gopls.setup{}
-require'lspconfig'.terraformls.setup{}
-require'lspconfig'.yamlls.setup{}
-require'lspconfig'.jsonls.setup{}
-require'lspconfig'.eslint.setup{}
 
 opt.number = true
 opt.wrap = false
