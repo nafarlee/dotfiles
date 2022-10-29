@@ -45,12 +45,6 @@ require('packer').startup(function(use)
   use {
       "catppuccin/nvim",
       as = "catppuccin",
-      config = function()
-          require("catppuccin").setup {
-              flavour = "latte" -- mocha, macchiato, frappe, latte
-          }
-          vim.api.nvim_command "colorscheme catppuccin"
-      end
   }
   if packer_bootstrap then
     require('packer').sync()
@@ -108,21 +102,9 @@ map('n', '<C-p>', '<cmd>Telescope git_files<CR>', {})
 
 vim.api.nvim_command('autocmd FileType go setlocal noexpandtab ts=2')
 
--- System-based color switching
-local function is_dark()
-  local mac_sh = 'defaults read -g AppleInterfaceStyle'
-  local xfce_sh = 'xfconf-query -c xsettings -p /Net/ThemeName'
-  local gnome_sh = 'gsettings get org.gnome.desktop.interface gtk-theme'
-  return (1 == fn.has("mac")
-          and fn.system(mac_sh):find("Dark"))
-      or (fn.system('command -v xfconf-query')
-          and fn.system(xfce_sh):find('dark'))
-      or (fn.system('command -v gsettings')
-          and fn.system(gnome_sh):find('dark'))
-end
-
-if is_dark() then
-  opt.background = 'dark'
+local date = os.date("*t")
+if (date.hour == 16 and date.min > 30) or date.hour > 16 or date.hour < 7 then
+  vim.api.nvim_command "colorscheme catppuccin-mocha"
 else
-  opt.background = 'light'
+  vim.api.nvim_command "colorscheme catppuccin-latte"
 end
