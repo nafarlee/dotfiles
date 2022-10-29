@@ -42,10 +42,7 @@ require('packer').startup(function(use)
       require("lsp_lines").setup()
     end,
   }
-  use {
-      "catppuccin/nvim",
-      as = "catppuccin",
-  }
+  use { "catppuccin/nvim", as = "catppuccin" }
   if packer_bootstrap then
     require('packer').sync()
   end
