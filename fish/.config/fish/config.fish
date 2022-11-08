@@ -1,7 +1,3 @@
-if command -v nvim
-  set -x EDITOR nvim
-end
-
 if test -d $HOME/.cargo/bin
   set -x PATH $PATH $HOME/.cargo/bin
 end
@@ -29,3 +25,7 @@ if test -f $HOME/homebrew/opt/asdf/libexec/asdf.fish
 end
 
 starship init fish | source
+
+if command -v nvim
+  set -x EDITOR nvim
+end
