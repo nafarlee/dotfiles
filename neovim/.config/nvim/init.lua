@@ -29,7 +29,12 @@ require('packer').startup(function(use)
       require('gitsigns').setup()
     end
   }
-  use 'jiangmiao/auto-pairs'
+  use {
+    "windwp/nvim-autopairs",
+    config = function()
+      require("nvim-autopairs").setup()
+    end
+  }
   use 'Olical/conjure'
   use 'bhurlow/vim-parinfer'
   use 'hashicorp/sentinel.vim'
