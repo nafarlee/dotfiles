@@ -73,7 +73,11 @@ require'nvim-treesitter.configs'.setup {
   indent = { enable = true }
 }
 
-require'lualine'.setup()
+require'lualine'.setup {
+  options = {
+    globalstatus = true,
+  },
+}
 
 opt.number = true
 opt.wrap = false
