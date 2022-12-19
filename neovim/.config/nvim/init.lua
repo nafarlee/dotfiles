@@ -44,6 +44,7 @@ require('packer').startup(function(use)
     end,
   }
   use { "catppuccin/nvim", as = "catppuccin" }
+  use 'JManch/sunset.nvim'
   if packer_bootstrap then
     require('packer').sync()
   end
@@ -78,6 +79,12 @@ require'lualine'.setup {
   },
 }
 
+vim.cmd "colorscheme catppuccin-latte"
+require("sunset").setup {
+  latitude = 39.833851,
+  longitude = -74.871826,
+}
+
 opt.number = true
 opt.wrap = false
 opt.ignorecase = true
@@ -101,10 +108,3 @@ map('n', '<Leader>,', ':vertical resize +10<CR>', {})
 map('n', '<C-p>', '<cmd>Telescope git_files<CR>', {})
 
 vim.api.nvim_command('autocmd FileType go setlocal noexpandtab ts=2')
-
-local date = os.date("*t")
-if (date.hour == 16 and date.min > 30) or date.hour > 16 or date.hour < 7 then
-  vim.api.nvim_command "colorscheme catppuccin-mocha"
-else
-  vim.api.nvim_command "colorscheme catppuccin-latte"
-end
