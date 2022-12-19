@@ -22,6 +22,7 @@ require('packer').startup(function(use)
   use 'neovim/nvim-lspconfig'
   use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
   use {'jose-elias-alvarez/null-ls.nvim', requires = {'nvim-lua/plenary.nvim'}}
+  use "jayp0521/mason-null-ls.nvim"
   use {
     'lewis6991/gitsigns.nvim',
     config = function()
@@ -55,15 +56,13 @@ require("mason-lspconfig").setup_handlers {
     require("lspconfig")[server_name].setup {}
   end
 }
+require("mason-null-ls").setup {
+    automatic_setup = true,
+}
+require 'mason-null-ls'.setup_handlers()
 
 vim.diagnostic.config {
   virtual_text = false,
-}
-
-require('null-ls').setup {
-  sources = {
-    require('null-ls').builtins.diagnostics.shellcheck,
-  },
 }
 
 require'nvim-treesitter.configs'.setup {
