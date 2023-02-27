@@ -1,4 +1,3 @@
-local map = vim.api.nvim_set_keymap
 local opt = vim.opt
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -81,16 +80,16 @@ opt.colorcolumn = '80'
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
-map('n', '<Space>', '', {})
-map('i', 'jk', '<esc>', {})
-map('i', 'kj', '<esc>', {})
-map('n', '<Up>', ':wincmd k<CR>', {})
-map('n', '<Down>', ':wincmd j<CR>', {})
-map('n', '<Left>', ':wincmd h<CR>', {})
-map('n', '<Right>', ':wincmd l<CR>', {})
-map('n', '<Leader>n', ':bn<CR>', {})
-map('n', '<Leader>.', ':vertical resize -10<CR>', {})
-map('n', '<Leader>,', ':vertical resize +10<CR>', {})
-map('n', '<C-p>', '<cmd>Telescope git_files<CR>', {})
+vim.api.nvim_set_keymap.map('n', '<Space>', '', {})
+vim.api.nvim_set_keymap.map('i', 'jk', '<esc>', {})
+vim.api.nvim_set_keymap.map('i', 'kj', '<esc>', {})
+vim.api.nvim_set_keymap.map('n', '<Up>', ':wincmd k<CR>', {})
+vim.api.nvim_set_keymap.map('n', '<Down>', ':wincmd j<CR>', {})
+vim.api.nvim_set_keymap.map('n', '<Left>', ':wincmd h<CR>', {})
+vim.api.nvim_set_keymap.map('n', '<Right>', ':wincmd l<CR>', {})
+vim.api.nvim_set_keymap.map('n', '<Leader>n', ':bn<CR>', {})
+vim.api.nvim_set_keymap.map('n', '<Leader>.', ':vertical resize -10<CR>', {})
+vim.api.nvim_set_keymap.map('n', '<Leader>,', ':vertical resize +10<CR>', {})
+vim.api.nvim_set_keymap.map('n', '<C-p>', '<cmd>Telescope git_files<CR>', {})
 
 vim.api.nvim_command('autocmd FileType go setlocal noexpandtab ts=2')
