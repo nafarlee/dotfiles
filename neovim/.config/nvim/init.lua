@@ -11,8 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
-  'kyazdani42/nvim-web-devicons',
-  'nvim-lualine/lualine.nvim',
+  { 'nvim-lualine/lualine.nvim', dependencies = {'kyazdani42/nvim-web-devicons'} },
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
   'neovim/nvim-lspconfig',
