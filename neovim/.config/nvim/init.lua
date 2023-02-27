@@ -1,4 +1,3 @@
-local fn = vim.fn
 local map = vim.api.nvim_set_keymap
 local opt = vim.opt
 
