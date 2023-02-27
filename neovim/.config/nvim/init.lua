@@ -32,7 +32,7 @@ require("lazy").setup({
   'vmchale/dhall-vim',
   'google/vim-jsonnet',
   { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
-  "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+  { "https://git.sr.ht/~whynothugo/lsp_lines.nvim", config = true },
   { "catppuccin/nvim", name = "catppuccin" },
   'JManch/sunset.nvim',
 })
