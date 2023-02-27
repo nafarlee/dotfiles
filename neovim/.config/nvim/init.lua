@@ -22,7 +22,7 @@ require("lazy").setup({
   {'nvim-telescope/telescope.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
   {'jose-elias-alvarez/null-ls.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
   "jayp0521/mason-null-ls.nvim",
-  'lewis6991/gitsigns.nvim',
+  { 'lewis6991/gitsigns.nvim', config = true },
   "windwp/nvim-autopairs",
   'Olical/conjure',
   'bhurlow/vim-parinfer',
