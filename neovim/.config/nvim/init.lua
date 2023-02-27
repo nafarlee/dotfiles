@@ -2,58 +2,40 @@ local fn = vim.fn
 local map = vim.api.nvim_set_keymap
 local opt = vim.opt
 
-local ensure_packer = function()
-  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-  if fn.empty(fn.glob(install_path)) > 0 then
-    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-    vim.cmd [[packadd packer.nvim]]
-    return true
-  end
-  return false
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
 end
-local packer_bootstrap = ensure_packer()
-
-require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim'
-  use 'kyazdani42/nvim-web-devicons'
-  use 'nvim-lualine/lualine.nvim'
-  use "williamboman/mason.nvim"
-  use "williamboman/mason-lspconfig.nvim"
-  use 'neovim/nvim-lspconfig'
-  use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
-  use {'jose-elias-alvarez/null-ls.nvim', requires = {'nvim-lua/plenary.nvim'}}
-  use "jayp0521/mason-null-ls.nvim"
-  use {
-    'lewis6991/gitsigns.nvim',
-    config = function()
-      require('gitsigns').setup()
-    end
-  }
-  use {
-    "windwp/nvim-autopairs",
-    config = function()
-      require("nvim-autopairs").setup()
-    end
-  }
-  use 'Olical/conjure'
-  use 'bhurlow/vim-parinfer'
-  use 'hashicorp/sentinel.vim'
-  use 'towolf/vim-helm'
-  use 'vmchale/dhall-vim'
-  use 'google/vim-jsonnet'
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-  use {
-    "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
-    config = function()
-      require("lsp_lines").setup()
-    end,
-  }
-  use { "catppuccin/nvim", as = "catppuccin" }
-  use 'JManch/sunset.nvim'
-  if packer_bootstrap then
-    require('packer').sync()
-  end
-end)
+vim.opt.rtp:prepend(lazypath)
+require("lazy").setup({
+  'kyazdani42/nvim-web-devicons',
+  'nvim-lualine/lualine.nvim',
+  "williamboman/mason.nvim",
+  "williamboman/mason-lspconfig.nvim",
+  'neovim/nvim-lspconfig',
+  {'nvim-telescope/telescope.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
+  {'jose-elias-alvarez/null-ls.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
+  "jayp0521/mason-null-ls.nvim",
+  'lewis6991/gitsigns.nvim',
+  "windwp/nvim-autopairs",
+  'Olical/conjure',
+  'bhurlow/vim-parinfer',
+  'hashicorp/sentinel.vim',
+  'towolf/vim-helm',
+  'vmchale/dhall-vim',
+  'google/vim-jsonnet',
+  { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
+  "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+  { "catppuccin/nvim", name = "catppuccin" },
+  'JManch/sunset.nvim',
+})
 
 require("mason").setup()
 require("mason-lspconfig").setup()
