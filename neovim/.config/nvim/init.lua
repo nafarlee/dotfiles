@@ -1,5 +1,3 @@
-local opt = vim.opt
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -70,13 +68,13 @@ require("sunset").setup {
   longitude = -74.871826,
 }
 
-opt.number = true
-opt.wrap = false
-opt.ignorecase = true
-opt.expandtab = true
-opt.softtabstop = 2
-opt.shiftwidth = 2
-opt.colorcolumn = '80'
+vim.opt.number = true
+vim.opt.wrap = false
+vim.opt.ignorecase = true
+vim.opt.expandtab = true
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.colorcolumn = '80'
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
