@@ -53,7 +53,13 @@ require("lazy").setup({
       }
     end
   },
-  { "catppuccin/nvim", name = "catppuccin" },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    config = function()
+      vim.cmd "colorscheme catppuccin-latte"
+    end
+  },
   'JManch/sunset.nvim',
 })
 
@@ -69,7 +75,6 @@ require("mason-null-ls").setup {
 }
 require 'mason-null-ls'.setup_handlers()
 
-vim.cmd "colorscheme catppuccin-latte"
 require("sunset").setup {
   latitude = 39.833851,
   longitude = -74.871826,
