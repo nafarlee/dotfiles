@@ -34,14 +34,6 @@ require("lazy").setup({
   'neovim/nvim-lspconfig',
   {'nvim-telescope/telescope.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
   {'jose-elias-alvarez/null-ls.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
-  {
-    "jay-babu/mason-null-ls.nvim",
-    config = function()
-      local mnl = require("mason-null-ls")
-      mnl.setup { automatic_setup = true }
-      mnl.setup_handlers()
-    end
-  },
   { 'lewis6991/gitsigns.nvim', config = true },
   { "windwp/nvim-autopairs", config = true },
   'Olical/conjure',
