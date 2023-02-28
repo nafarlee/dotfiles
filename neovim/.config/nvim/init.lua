@@ -152,5 +152,3 @@ vim.keymap.set('n', '<Leader>n', ':bn<CR>')
 vim.keymap.set('n', '<Leader>.', ':vertical resize -10<CR>')
 vim.keymap.set('n', '<Leader>,', ':vertical resize +10<CR>')
 vim.keymap.set('n', '<C-p>', '<cmd>Telescope git_files<CR>')
-
-vim.api.nvim_command('autocmd FileType go setlocal noexpandtab ts=2')
