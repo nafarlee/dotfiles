@@ -32,7 +32,18 @@ require("lazy").setup({
   'towolf/vim-helm',
   'vmchale/dhall-vim',
   'google/vim-jsonnet',
-  { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
+  {
+    'nvim-treesitter/nvim-treesitter',
+    build = ':TSUpdate',
+    config = function()
+      require'nvim-treesitter.configs'.setup {
+        ensure_installed = "all",
+        highlight = { enable = true },
+        incremental_selection = { enable = true },
+        indent = { enable = true }
+      }
+    end
+  },
   {
     "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
     config = function()
@@ -57,13 +68,6 @@ require("mason-null-ls").setup {
     automatic_setup = true,
 }
 require 'mason-null-ls'.setup_handlers()
-
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = "all",
-  highlight = { enable = true },
-  incremental_selection = { enable = true },
-  indent = { enable = true }
-}
 
 vim.cmd "colorscheme catppuccin-latte"
 require("sunset").setup {
