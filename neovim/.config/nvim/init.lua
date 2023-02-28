@@ -11,7 +11,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
-  { "williamboman/mason.nvim", config = true },
+  {
+    "williamboman/mason.nvim",
+    config = true,
+  },
   {
     "williamboman/mason-lspconfig.nvim",
     dependencies = {"mason.nvim"},
@@ -45,7 +48,10 @@ require("lazy").setup({
       })
     end
   },
-  {'nvim-telescope/telescope.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
+  {
+    'nvim-telescope/telescope.nvim',
+    dependencies = {'nvim-lua/plenary.nvim'},
+  },
   {
     'nvim-lualine/lualine.nvim',
     dependencies = {'kyazdani42/nvim-web-devicons'},
@@ -53,13 +59,29 @@ require("lazy").setup({
       options = { globalstatus = true },
     },
   },
-  { 'lewis6991/gitsigns.nvim', config = true },
-  { "windwp/nvim-autopairs", config = true },
-  'Olical/conjure',
-  'hashicorp/sentinel.vim',
-  'towolf/vim-helm',
-  'vmchale/dhall-vim',
-  'google/vim-jsonnet',
+  {
+    'lewis6991/gitsigns.nvim',
+    config = true,
+  },
+  {
+    "windwp/nvim-autopairs",
+    config = true,
+  },
+  {
+    'Olical/conjure',
+  },
+  {
+    'hashicorp/sentinel.vim',
+  },
+  {
+    'towolf/vim-helm',
+  },
+  {
+    'vmchale/dhall-vim',
+  },
+  {
+    'google/vim-jsonnet',
+  },
   {
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
@@ -103,7 +125,9 @@ require("lazy").setup({
       })
     end
   },
-  "lukas-reineke/indent-blankline.nvim",
+  {
+    "lukas-reineke/indent-blankline.nvim",
+  },
 })
 
 vim.opt.number = true
