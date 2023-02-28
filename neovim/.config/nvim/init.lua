@@ -1,3 +1,5 @@
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ','
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -139,8 +141,6 @@ vim.o.shiftwidth = 2
 vim.o.colorcolumn = '80'
 vim.o.termguicolors = true
 
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ','
 vim.keymap.set('n', '<Space>', '')
 vim.keymap.set("i", "jk", "<esc>")
 vim.keymap.set("i", "kj", "<esc>")
