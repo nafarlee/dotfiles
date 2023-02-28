@@ -130,14 +130,14 @@ require("lazy").setup({
   },
 })
 
-vim.opt.number = true
-vim.opt.wrap = false
-vim.opt.ignorecase = true
-vim.opt.expandtab = true
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.colorcolumn = '80'
-vim.opt.termguicolors = true
+vim.o.number = true
+vim.o.wrap = false
+vim.o.ignorecase = true
+vim.o.expandtab = true
+vim.o.softtabstop = 2
+vim.o.shiftwidth = 2
+vim.o.colorcolumn = '80'
+vim.o.termguicolors = true
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
