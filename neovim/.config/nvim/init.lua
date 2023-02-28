@@ -28,7 +28,6 @@ require("lazy").setup({
   { 'lewis6991/gitsigns.nvim', config = true },
   { "windwp/nvim-autopairs", config = true },
   'Olical/conjure',
-  'bhurlow/vim-parinfer',
   'hashicorp/sentinel.vim',
   'towolf/vim-helm',
   'vmchale/dhall-vim',
