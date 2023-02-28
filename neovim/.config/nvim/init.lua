@@ -141,16 +141,16 @@ vim.o.termguicolors = true
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
-vim.api.nvim_set_keymap('n', '<Space>', '', {})
-vim.api.nvim_set_keymap('i', 'jk', '<esc>', {})
-vim.api.nvim_set_keymap('i', 'kj', '<esc>', {})
-vim.api.nvim_set_keymap('n', '<Up>', ':wincmd k<CR>', {})
-vim.api.nvim_set_keymap('n', '<Down>', ':wincmd j<CR>', {})
-vim.api.nvim_set_keymap('n', '<Left>', ':wincmd h<CR>', {})
-vim.api.nvim_set_keymap('n', '<Right>', ':wincmd l<CR>', {})
-vim.api.nvim_set_keymap('n', '<Leader>n', ':bn<CR>', {})
-vim.api.nvim_set_keymap('n', '<Leader>.', ':vertical resize -10<CR>', {})
-vim.api.nvim_set_keymap('n', '<Leader>,', ':vertical resize +10<CR>', {})
-vim.api.nvim_set_keymap('n', '<C-p>', '<cmd>Telescope git_files<CR>', {})
+vim.keymap.set('n', '<Space>', '')
+vim.keymap.set("i", "jk", "<esc>")
+vim.keymap.set("i", "kj", "<esc>")
+vim.keymap.set('n', '<Up>', ':wincmd k<CR>')
+vim.keymap.set('n', '<Down>', ':wincmd j<CR>')
+vim.keymap.set('n', '<Left>', ':wincmd h<CR>')
+vim.keymap.set('n', '<Right>', ':wincmd l<CR>')
+vim.keymap.set('n', '<Leader>n', ':bn<CR>')
+vim.keymap.set('n', '<Leader>.', ':vertical resize -10<CR>')
+vim.keymap.set('n', '<Leader>,', ':vertical resize +10<CR>')
+vim.keymap.set('n', '<C-p>', '<cmd>Telescope git_files<CR>')
 
 vim.api.nvim_command('autocmd FileType go setlocal noexpandtab ts=2')
