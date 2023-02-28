@@ -33,6 +33,8 @@ require("lazy").setup({
       lspconfig.pylsp.setup({})
       lspconfig.bashls.setup({})
       lspconfig.yamlls.setup({})
+      lspconfig.terraformls.setup({})
+      lspconfig.tflint.setup({})
     end
   },
   {
