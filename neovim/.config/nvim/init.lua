@@ -11,6 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
+  {'nvim-telescope/telescope.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
   {
     'nvim-lualine/lualine.nvim',
     dependencies = {'kyazdani42/nvim-web-devicons'},
@@ -31,7 +32,6 @@ require("lazy").setup({
     end
   },
   'neovim/nvim-lspconfig',
-  {'nvim-telescope/telescope.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
   {'jose-elias-alvarez/null-ls.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
   { 'lewis6991/gitsigns.nvim', config = true },
   { "windwp/nvim-autopairs", config = true },
