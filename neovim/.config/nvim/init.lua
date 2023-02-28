@@ -31,6 +31,7 @@ require("lazy").setup({
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
       lspconfig.pylsp.setup({})
+      lspconfig.bashls.setup({})
     end
   },
   {
