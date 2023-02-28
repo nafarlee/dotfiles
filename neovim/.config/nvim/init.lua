@@ -89,6 +89,7 @@ vim.opt.expandtab = true
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.colorcolumn = '80'
+vim.opt.termguicolors = true
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
