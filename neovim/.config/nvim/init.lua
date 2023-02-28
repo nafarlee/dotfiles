@@ -33,7 +33,15 @@ require("lazy").setup({
   'vmchale/dhall-vim',
   'google/vim-jsonnet',
   { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
-  { "https://git.sr.ht/~whynothugo/lsp_lines.nvim", config = true },
+  {
+    "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+    config = function()
+      require("lsp_lines").setup()
+      vim.diagnostic.config {
+        virtual_text = false,
+      }
+    end
+  },
   { "catppuccin/nvim", name = "catppuccin" },
   'JManch/sunset.nvim',
 })
@@ -49,10 +57,6 @@ require("mason-null-ls").setup {
     automatic_setup = true,
 }
 require 'mason-null-ls'.setup_handlers()
-
-vim.diagnostic.config {
-  virtual_text = false,
-}
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "all",
