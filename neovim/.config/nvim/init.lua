@@ -75,7 +75,14 @@ require("lazy").setup({
       longitude = -74.871826,
     },
   },
-  "RRethy/vim-illuminate",
+  {
+    "RRethy/vim-illuminate",
+    config = function()
+      require("illuminate").configure({
+        under_cursor = false,
+      })
+    end
+  },
   "lukas-reineke/indent-blankline.nvim",
 })
 
