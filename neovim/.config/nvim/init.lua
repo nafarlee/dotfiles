@@ -26,7 +26,7 @@ require("lazy").setup({
   {'jose-elias-alvarez/null-ls.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
   "jayp0521/mason-null-ls.nvim",
   { 'lewis6991/gitsigns.nvim', config = true },
-  "windwp/nvim-autopairs",
+  { "windwp/nvim-autopairs", config = true },
   'Olical/conjure',
   'bhurlow/vim-parinfer',
   'hashicorp/sentinel.vim',
