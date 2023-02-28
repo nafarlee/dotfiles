@@ -67,6 +67,7 @@ require("lazy").setup({
       longitude = -74.871826,
     },
   },
+  "RRethy/vim-illuminate",
 })
 
 require("mason").setup()
