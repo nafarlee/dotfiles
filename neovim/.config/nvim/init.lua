@@ -68,6 +68,7 @@ require("lazy").setup({
     },
   },
   "RRethy/vim-illuminate",
+  "lukas-reineke/indent-blankline.nvim",
 })
 
 require("mason").setup()
