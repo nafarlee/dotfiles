@@ -11,7 +11,14 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
-  { 'nvim-lualine/lualine.nvim', dependencies = {'kyazdani42/nvim-web-devicons'} },
+  {
+    'nvim-lualine/lualine.nvim',
+    dependencies = {'kyazdani42/nvim-web-devicons'},
+    name = "lualine",
+    opts = {
+      options = { globalstatus = true },
+    },
+  },
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
   'neovim/nvim-lspconfig',
@@ -53,12 +60,6 @@ require'nvim-treesitter.configs'.setup {
   highlight = { enable = true },
   incremental_selection = { enable = true },
   indent = { enable = true }
-}
-
-require'lualine'.setup {
-  options = {
-    globalstatus = true,
-  },
 }
 
 vim.cmd "colorscheme catppuccin-latte"
