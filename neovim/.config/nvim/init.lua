@@ -137,6 +137,21 @@ require("lazy").setup({
       limit_to_window = true,
     },
   },
+  {
+    "glepnir/lspsaga.nvim",
+    event = "BufRead",
+    name = "lspsaga",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+      "nvim-treesitter",
+    },
+    config = function()
+      require("lspsaga").setup({})
+      vim.keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>")
+      vim.keymap.set("n", "gD", "<cmd>Lspsaga goto_definition<CR>")
+      vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>")
+    end
+  },
 })
 
 vim.o.number = true
