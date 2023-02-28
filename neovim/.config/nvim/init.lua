@@ -24,7 +24,12 @@ require("lazy").setup({
     end
   },
   'neovim/nvim-lspconfig',
-  {'jose-elias-alvarez/null-ls.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
+  {
+    "jay-babu/mason-null-ls.nvim",
+    opts = {
+      automatic_installation = true,
+    },
+  },
   {'nvim-telescope/telescope.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
   {
     'nvim-lualine/lualine.nvim',
