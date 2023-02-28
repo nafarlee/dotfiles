@@ -71,6 +71,7 @@ require("lazy").setup({
   },
   {
     'Olical/conjure',
+    ft = {"clojure"}
   },
   {
     'hashicorp/sentinel.vim',
