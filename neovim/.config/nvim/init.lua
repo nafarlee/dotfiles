@@ -60,7 +60,13 @@ require("lazy").setup({
       vim.cmd "colorscheme catppuccin-latte"
     end
   },
-  'JManch/sunset.nvim',
+  {
+    'JManch/sunset.nvim',
+    opts = {
+      latitude = 39.833851,
+      longitude = -74.871826,
+    },
+  },
 })
 
 require("mason").setup()
@@ -74,11 +80,6 @@ require("mason-null-ls").setup {
     automatic_setup = true,
 }
 require 'mason-null-ls'.setup_handlers()
-
-require("sunset").setup {
-  latitude = 39.833851,
-  longitude = -74.871826,
-}
 
 vim.opt.number = true
 vim.opt.wrap = false
