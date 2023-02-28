@@ -19,12 +19,29 @@ require("lazy").setup({
       options = { globalstatus = true },
     },
   },
-  "williamboman/mason.nvim",
-  "williamboman/mason-lspconfig.nvim",
+  { "williamboman/mason.nvim", config = true },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    config = function()
+      require("mason-lspconfig").setup()
+      require("mason-lspconfig").setup_handlers {
+          function (server_name)
+              require("lspconfig")[server_name].setup {}
+          end
+      }
+    end
+  },
   'neovim/nvim-lspconfig',
   {'nvim-telescope/telescope.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
   {'jose-elias-alvarez/null-ls.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
-  "jayp0521/mason-null-ls.nvim",
+  {
+    "jay-babu/mason-null-ls.nvim",
+    config = function()
+      local mnl = require("mason-null-ls")
+      mnl.setup { automatic_setup = true }
+      mnl.setup_handlers()
+    end
+  },
   { 'lewis6991/gitsigns.nvim', config = true },
   { "windwp/nvim-autopairs", config = true },
   'Olical/conjure',
@@ -70,18 +87,6 @@ require("lazy").setup({
   "RRethy/vim-illuminate",
   "lukas-reineke/indent-blankline.nvim",
 })
-
-require("mason").setup()
-require("mason-lspconfig").setup()
-require("mason-lspconfig").setup_handlers {
-  function (server_name)
-    require("lspconfig")[server_name].setup {}
-  end
-}
-require("mason-null-ls").setup {
-    automatic_setup = true,
-}
-require 'mason-null-ls'.setup_handlers()
 
 vim.opt.number = true
 vim.opt.wrap = false
