@@ -159,6 +159,7 @@ require("lazy").setup({
   },
 })
 
+vim.o.signcolumn = "yes"
 vim.o.number = true
 vim.o.wrap = false
 vim.o.ignorecase = true
