@@ -38,6 +38,6 @@ end
 
 starship init fish | source
 
-if command -v nvim
+if command --query nvim
   set -x EDITOR nvim
 end
