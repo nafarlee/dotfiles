@@ -139,12 +139,6 @@ require("lazy").setup({
     "lukas-reineke/indent-blankline.nvim",
   },
   {
-    "m4xshen/smartcolumn.nvim",
-    opts = {
-      limit_to_window = true,
-    },
-  },
-  {
     "glepnir/lspsaga.nvim",
     event = "BufRead",
     name = "lspsaga",
