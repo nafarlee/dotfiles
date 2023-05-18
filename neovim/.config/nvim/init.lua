@@ -52,6 +52,7 @@ require("lazy").setup({
       null_ls.setup({
         sources = {
           null_ls.builtins.diagnostics.shellcheck,
+          null_ls.builtins.diagnostics.markdownlint,
         },
       })
     end
