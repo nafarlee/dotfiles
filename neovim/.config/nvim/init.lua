@@ -40,7 +40,13 @@ require("lazy").setup({
     end
   },
   {
+    "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
+      mode = "document_diagnostics",
+      height = 5,
+      auto_open = true,
+      auto_close = true,
     },
   },
   {
@@ -124,6 +130,13 @@ require("lazy").setup({
       vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>")
     end
   },
+})
+
+vim.diagnostic.config({
+  underline = true,
+  virtual_text = false,
+  signs = true,
+  update_in_insert = false,
 })
 
 vim.o.signcolumn = "yes"
