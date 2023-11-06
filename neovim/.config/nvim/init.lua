@@ -65,8 +65,8 @@ require("lazy").setup({
     config = true,
   },
   {
-    "windwp/nvim-autopairs",
-    config = true,
+    "echasnovski/mini.pairs",
+    opts = {},
   },
   {
     'Olical/conjure',
