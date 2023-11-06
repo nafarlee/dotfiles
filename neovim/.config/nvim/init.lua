@@ -46,19 +46,6 @@ require("lazy").setup({
     },
   },
   {
-    'jose-elias-alvarez/null-ls.nvim',
-    dependencies = {'nvim-lua/plenary.nvim'},
-    config = function()
-      local null_ls = require("null-ls")
-      null_ls.setup({
-        sources = {
-          null_ls.builtins.diagnostics.shellcheck,
-          null_ls.builtins.diagnostics.markdownlint,
-        },
-      })
-    end
-  },
-  {
     'nvim-telescope/telescope.nvim',
     dependencies = {'nvim-lua/plenary.nvim'},
   },
@@ -82,16 +69,10 @@ require("lazy").setup({
     ft = {"clojure"}
   },
   {
-    'hashicorp/sentinel.vim',
-  },
-  {
     'towolf/vim-helm',
   },
   {
     'vmchale/dhall-vim',
-  },
-  {
-    'google/vim-jsonnet',
   },
   {
     'nvim-treesitter/nvim-treesitter',
@@ -102,15 +83,6 @@ require("lazy").setup({
         highlight = { enable = true },
         incremental_selection = { enable = true },
         indent = { enable = true }
-      }
-    end
-  },
-  {
-    "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
-    config = function()
-      require("lsp_lines").setup()
-      vim.diagnostic.config {
-        virtual_text = false,
       }
     end
   },
