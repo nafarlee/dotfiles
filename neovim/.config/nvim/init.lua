@@ -36,6 +36,7 @@ require("lazy").setup({
       lspconfig.terraformls.setup({})
       lspconfig.tflint.setup({})
       lspconfig.jsonls.setup({})
+      lspconfig.denols.setup({})
     end
   },
   {
