@@ -116,9 +116,8 @@ require("lazy").setup({
     "lukas-reineke/indent-blankline.nvim",
   },
   {
-    "glepnir/lspsaga.nvim",
-    event = "BufRead",
-    name = "lspsaga",
+    "nvimdev/lspsaga.nvim",
+    event = "LspAttach",
     dependencies = {
       "nvim-tree/nvim-web-devicons",
       "nvim-treesitter",
