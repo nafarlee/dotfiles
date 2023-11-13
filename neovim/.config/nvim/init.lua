@@ -124,7 +124,11 @@ require("lazy").setup({
       "nvim-treesitter",
     },
     config = function()
-      require("lspsaga").setup({})
+      require("lspsaga").setup({
+        lightbulb = {
+          enable = false,
+        },
+      })
       vim.keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>")
       vim.keymap.set("n", "gD", "<cmd>Lspsaga goto_definition<CR>")
       vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>")
