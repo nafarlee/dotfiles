@@ -136,9 +136,9 @@ require("lazy").setup({
 })
 
 vim.diagnostic.config({
-  underline = true,
+  underline = false,
   virtual_text = false,
-  signs = true,
+  signs = false,
   update_in_insert = false,
 })
 
