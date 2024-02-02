@@ -35,6 +35,18 @@ require("lazy").setup({
     'neovim/nvim-lspconfig',
   },
   {
+    "jay-babu/mason-null-ls.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    dependencies = { "williamboman/mason.nvim", "nvimtools/none-ls.nvim" },
+    opts = {
+      automatic_installation = false,
+      handlers = {},
+    },
+  },
+  {
+    "nvimtools/none-ls.nvim",
+  },
+  {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
