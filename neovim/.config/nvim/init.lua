@@ -21,23 +21,15 @@ require("lazy").setup({
     "williamboman/mason-lspconfig.nvim",
     dependencies = {"mason.nvim"},
     opts = {
-      automatic_installation = true,
+      handlers = {
+        function(server_name)
+          require("lspconfig")[server_name].setup({})
+        end
+      },
     },
   },
   {
     'neovim/nvim-lspconfig',
-    dependencies = { "mason-lspconfig.nvim"},
-    config = function()
-      local lspconfig = require("lspconfig")
-      lspconfig.lua_ls.setup({})
-      lspconfig.pylsp.setup({})
-      lspconfig.bashls.setup({})
-      lspconfig.yamlls.setup({})
-      lspconfig.terraformls.setup({})
-      lspconfig.tflint.setup({})
-      lspconfig.jsonls.setup({})
-      lspconfig.denols.setup({})
-    end
   },
   {
     "folke/trouble.nvim",
