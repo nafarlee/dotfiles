@@ -19,7 +19,10 @@ require("lazy").setup({
   },
   {
     "williamboman/mason-lspconfig.nvim",
-    dependencies = {"mason.nvim"},
+    dependencies = {
+      "williamboman/mason.nvim",
+      'neovim/nvim-lspconfig',
+    },
     opts = {
       handlers = {
         function(server_name)
