@@ -133,6 +133,10 @@ require("lazy").setup({
     },
     config = function()
       require("lspsaga").setup({
+        definition = {
+          width = 0.8,
+          height = 0.7,
+        },
         lightbulb = {
           enable = false,
         },
