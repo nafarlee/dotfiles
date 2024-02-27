@@ -47,14 +47,9 @@ require("lazy").setup({
     "nvimtools/none-ls.nvim",
   },
   {
-    "folke/trouble.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = {
-      mode = "document_diagnostics",
-      height = 5,
-      auto_open = true,
-      auto_close = true,
-    },
+    'dgagn/diagflow.nvim',
+    event = 'LspAttach',
+    opts = {},
   },
   {
     'nvim-telescope/telescope.nvim',
