@@ -155,6 +155,7 @@ vim.diagnostic.config({
   signs = true,
   update_in_insert = false,
 })
+vim.keymap.set("n", "<Leader>k", vim.diagnostic.open_float)
 
 vim.o.signcolumn = "yes"
 vim.o.number = true
