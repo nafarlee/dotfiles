@@ -6,9 +6,7 @@
 [rerere]
 	enabled = true
 [diff]
-	indentHeuristic = on
-	algorithm = histogram
-	colorMoved = default
+  external = difft  --ignore-comments
 [pull]
 	rebase = true
 [merge]
