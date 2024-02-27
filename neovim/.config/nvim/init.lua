@@ -153,7 +153,7 @@ vim.diagnostic.config({
   underline = true,
   virtual_text = false,
   signs = true,
-  update_in_insert = false,
+  update_in_insert = true,
 })
 vim.keymap.set("n", "<Leader>k", vim.diagnostic.open_float)
 
