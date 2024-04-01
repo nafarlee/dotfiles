@@ -9,7 +9,5 @@
   external = difft  --ignore-comments
 [pull]
 	rebase = true
-[merge]
-	conflictStyle = diff3
 [init]
 	defaultBranch = main
