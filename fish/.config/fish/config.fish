@@ -12,8 +12,8 @@ if test -d $HOME/.google-cloud-sdk/bin
   set -x PATH $PATH $HOME/.google-cloud-sdk/bin
 end
 
-if test -d "$HOME/homebrew/bin"
-  set -x --append PATH "$HOME/homebrew/bin/"
+if test -d "/opt/homebrew/bin"
+  set -x --append PATH "/opt/homebrew/bin/"
 end
 
 if test -d "$HOME/google-cloud-sdk/bin"
