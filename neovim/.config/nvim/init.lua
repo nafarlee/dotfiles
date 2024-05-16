@@ -154,6 +154,7 @@ vim.diagnostic.config({
   signs = true,
   update_in_insert = true,
 })
+vim.lsp.inlay_hint.enable()
 
 vim.o.signcolumn = "yes"
 vim.o.number = true
