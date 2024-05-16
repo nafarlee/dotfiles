@@ -144,6 +144,9 @@ require("lazy").setup({
       vim.keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>")
       vim.keymap.set("n", "gD", "<cmd>Lspsaga goto_definition<CR>")
       vim.keymap.set("n", "<Leader>f", "<cmd>Lspsaga finder<CR>")
+      if vim.lsp.inlay_hint then
+        vim.lsp.inlay_hint.enable()
+      end
     end
   },
 })
@@ -154,7 +157,6 @@ vim.diagnostic.config({
   signs = true,
   update_in_insert = true,
 })
-vim.lsp.inlay_hint.enable()
 
 vim.o.signcolumn = "yes"
 vim.o.number = true
