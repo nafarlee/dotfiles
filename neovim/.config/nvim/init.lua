@@ -143,7 +143,6 @@ require("lazy").setup({
       })
       vim.keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>")
       vim.keymap.set("n", "gD", "<cmd>Lspsaga goto_definition<CR>")
-      vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>")
       vim.keymap.set("n", "<Leader>f", "<cmd>Lspsaga finder<CR>")
     end
   },
@@ -155,7 +154,6 @@ vim.diagnostic.config({
   signs = true,
   update_in_insert = true,
 })
-vim.keymap.set("n", "<Leader>k", vim.diagnostic.open_float)
 
 vim.o.signcolumn = "yes"
 vim.o.number = true
@@ -166,7 +164,6 @@ vim.o.tabstop = 2
 vim.o.softtabstop = 2
 vim.o.shiftwidth = 2
 vim.o.colorcolumn = '80'
-vim.o.termguicolors = true
 
 vim.keymap.set('n', '<Space>', '')
 vim.keymap.set("i", "jk", "<esc>")
