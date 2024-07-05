@@ -149,6 +149,10 @@ require("lazy").setup({
       end
     end
   },
+  {
+    "gpanders/nvim-parinfer",
+    ft = {"scheme"},
+  },
 })
 
 vim.diagnostic.config({
