@@ -36,6 +36,10 @@ if test -f $HOME/homebrew/opt/asdf/libexec/asdf.fish
   source $HOME/homebrew/opt/asdf/libexec/asdf.fish
 end
 
+if test -d "$HOME/.bin"
+  set -x --prepend PATH "$HOME/.bin"
+end
+
 starship init fish | source
 
 if command --query nvim
