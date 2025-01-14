@@ -106,9 +106,9 @@ require("lazy").setup({
     priority = 1000,
     dependencies = {
       {
-        "catppuccin/nvim",
+        "rebelot/kanagawa.nvim",
         config = function()
-          vim.cmd "colorscheme catppuccin-latte"
+          vim.cmd "colorscheme kanagawa-dragon"
         end
       }
     },
