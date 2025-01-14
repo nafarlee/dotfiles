@@ -144,6 +144,7 @@ require("lazy").setup({
       vim.keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>")
       vim.keymap.set("n", "gD", "<cmd>Lspsaga goto_definition<CR>")
       vim.keymap.set("n", "<Leader>f", "<cmd>Lspsaga finder<CR>")
+      vim.keymap.set("n", "<Leader>b", "<cmd>Lspsaga show_buf_diagnostics<CR>")
       if vim.lsp.inlay_hint then
         vim.lsp.inlay_hint.enable()
       end
