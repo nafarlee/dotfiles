@@ -93,25 +93,10 @@ require("lazy").setup({
     end
   },
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
-  },
-  {
-    'JManch/sunset.nvim',
-    opts = {
-      latitude = 39.833851,
-      longitude = -74.871826,
-    },
-    lazy = false,
-    priority = 1000,
-    dependencies = {
-      {
-        "rebelot/kanagawa.nvim",
-        config = function()
-          vim.cmd "colorscheme kanagawa-dragon"
-        end
-      }
-    },
+    "rebelot/kanagawa.nvim",
+    config = function()
+      vim.cmd "colorscheme kanagawa-lotus"
+    end
   },
   {
     "RRethy/vim-illuminate",
