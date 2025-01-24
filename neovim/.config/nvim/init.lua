@@ -139,6 +139,37 @@ require("lazy").setup({
     "gpanders/nvim-parinfer",
     ft = {"scheme"},
   },
+  {
+    "milanglacier/minuet-ai.nvim",
+    dependencies = {"nvim-lua/plenary.nvim"},
+    config = function()
+      require('minuet').setup {
+        virtualtext = {
+          auto_trigger_ft = { '*' },
+          keymap = {
+            accept_line = '<Tab>',
+            accept = '<S-Tab>',
+          },
+        },
+        request_timeout = 10,
+        provider = 'openai_fim_compatible',
+        provider_options = {
+          openai_fim_compatible = {
+            stream = true,
+            api_key = 'TERM',
+            name = 'Ollama',
+            end_point = 'http://localhost:11434/v1/completions',
+            model = 'qwen2.5-coder:14b',
+            optional = {
+              max_tokens = 256,
+              top_p = 0.9,
+              stop = { '\n\n' },
+            },
+          },
+        },
+      }
+    end,
+  },
 })
 
 vim.diagnostic.config({
