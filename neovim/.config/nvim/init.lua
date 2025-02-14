@@ -113,6 +113,10 @@ require("lazy").setup({
       vim.cmd("colorscheme rose-pine")
     end
   },
+  {
+    "f-person/auto-dark-mode.nvim",
+    opts = {}
+  },
 })
 
 vim.diagnostic.config({
