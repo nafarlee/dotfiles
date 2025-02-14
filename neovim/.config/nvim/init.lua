@@ -85,9 +85,9 @@ require("lazy").setup({
     config = true,
   },
   {
-    "echasnovski/mini.pairs",
-    opts = {},
-  },
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    config = true
   },
   {
     'nvim-treesitter/nvim-treesitter',
