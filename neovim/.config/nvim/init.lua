@@ -106,6 +106,13 @@ require("lazy").setup({
     "gpanders/nvim-parinfer",
     ft = {"scheme"},
   },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    config = function()
+      vim.cmd("colorscheme rose-pine")
+    end
+  },
 })
 
 vim.diagnostic.config({
