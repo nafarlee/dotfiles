@@ -30,7 +30,7 @@ require("lazy").setup({
       words = { enabled = true },
     },
     keys = {
-      { "<C-p>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
+      { "<C-p>", function() Snacks.picker.git_files() end, desc = "Find Git Files" },
       { "gd", function() Snacks.picker.lsp_definitions() end, desc = "Goto Definition" },
       { "gD", function() Snacks.picker.lsp_declarations() end, desc = "Goto Declaration" },
       { "gr", function() Snacks.picker.lsp_references() end, nowait = true, desc = "References" },
