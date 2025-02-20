@@ -133,6 +133,7 @@ vim.diagnostic.config({
   update_in_insert = true,
 })
 
+vim.o.cmdheight = 0
 vim.o.signcolumn = "yes"
 vim.o.number = true
 vim.o.wrap = false
