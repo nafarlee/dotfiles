@@ -1,144 +1,123 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ','
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable",
-    lazypath,
-  })
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+  local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+  if vim.v.shell_error ~= 0 then
+    vim.api.nvim_echo({
+      { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
+      { out, "WarningMsg" },
+      { "\nPress any key to exit..." },
+    }, true, {})
+    vim.fn.getchar()
+    os.exit(1)
+  end
 end
 vim.opt.rtp:prepend(lazypath)
+
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ','
+
 require("lazy").setup({
-  {
-    "folke/snacks.nvim",
-    priority = 1000,
-    lazy = false,
-    opts = {
-      bigfile = { enabled = true },
-      explorer = { enabled = true },
-      indent = { enabled = true },
-      input = { enabled = true },
-      picker = { enabled = true },
-      notifier = { enabled = true },
-      quickfile = { enabled = true },
-      scope = { enabled = true },
-      statuscolumn = { enabled = true },
-      words = { enabled = true },
-    },
-    keys = {
-      { "<C-p>", function() Snacks.picker.git_files() end, desc = "Find Git Files" },
-      { "gd", function() Snacks.picker.lsp_definitions() end, desc = "Goto Definition" },
-      { "gD", function() Snacks.picker.lsp_declarations() end, desc = "Goto Declaration" },
-      { "gr", function() Snacks.picker.lsp_references() end, nowait = true, desc = "References" },
-      { "gI", function() Snacks.picker.lsp_implementations() end, desc = "Goto Implementation" },
-      { "gy", function() Snacks.picker.lsp_type_definitions() end, desc = "Goto T[y]pe Definition" },
-      { "<leader>ss", function() Snacks.picker.lsp_symbols() end, desc = "LSP Symbols" },
-      { "<leader>sS", function() Snacks.picker.lsp_workspace_symbols() end, desc = "LSP Workspace Symbols" },
-    },
-  },
-  {
-    "williamboman/mason.nvim",
-    config = true,
-  },
-  {
-    "williamboman/mason-lspconfig.nvim",
-    dependencies = {
-      "williamboman/mason.nvim",
-      'neovim/nvim-lspconfig',
-    },
-    opts = {
-      handlers = {
-        function(server_name)
-          require("lspconfig")[server_name].setup({})
-        end
+  spec = {
+    {
+      "folke/snacks.nvim",
+      priority = 1000,
+      lazy = false,
+      opts = {
+        bigfile = { enabled = true },
+        explorer = { enabled = true },
+        indent = { enabled = true },
+        input = { enabled = true },
+        picker = { enabled = true },
+        notifier = { enabled = true },
+        quickfile = { enabled = true },
+        scope = { enabled = true },
+        statuscolumn = { enabled = true },
+        words = { enabled = true },
+      },
+      keys = {
+        { "<C-p>", function() Snacks.picker.git_files() end, desc = "Find Git Files" },
+        { "gd", function() Snacks.picker.lsp_definitions() end, desc = "Goto Definition" },
+        { "gD", function() Snacks.picker.lsp_declarations() end, desc = "Goto Declaration" },
+        { "gr", function() Snacks.picker.lsp_references() end, nowait = true, desc = "References" },
+        { "gI", function() Snacks.picker.lsp_implementations() end, desc = "Goto Implementation" },
+        { "gy", function() Snacks.picker.lsp_type_definitions() end, desc = "Goto T[y]pe Definition" },
+        { "<leader>ss", function() Snacks.picker.lsp_symbols() end, desc = "LSP Symbols" },
+        { "<leader>sS", function() Snacks.picker.lsp_workspace_symbols() end, desc = "LSP Workspace Symbols" },
       },
     },
-  },
-  {
+    "mason-org/mason.nvim",
+    "mason-org/mason-lspconfig.nvim",
     'neovim/nvim-lspconfig',
-  },
-  {
-    "jay-babu/mason-null-ls.nvim",
-    event = { "BufReadPre", "BufNewFile" },
-    dependencies = { "williamboman/mason.nvim", "nvimtools/none-ls.nvim" },
-    opts = {
-      automatic_installation = false,
-      handlers = {},
-    },
-  },
-  {
     "nvimtools/none-ls.nvim",
-  },
-  {
-    'nvim-lualine/lualine.nvim',
-    dependencies = {'nvim-tree/nvim-web-devicons'},
-    opts = {
-      options = { globalstatus = true },
-      sections = {
-        lualine_b = {
-          'branch',
-          'diff',
-          'diagnostics',
-          {
-            'macro',
-            fmt = function()
-              local reg = vim.fn.reg_recording()
-              if reg == "" then return nil end
-              return "Recording @" .. reg
-            end,
+    {
+      'nvim-lualine/lualine.nvim',
+      dependencies = {'nvim-tree/nvim-web-devicons'},
+      opts = {
+        options = { globalstatus = true },
+        sections = {
+          lualine_b = {
+            'branch',
+            'diff',
+            'diagnostics',
+            {
+              'macro',
+              fmt = function()
+                local reg = vim.fn.reg_recording()
+                if reg == "" then return nil end
+                return "Recording @" .. reg
+              end,
+            },
           },
         },
       },
     },
+    {
+      'lewis6991/gitsigns.nvim',
+      config = true,
+    },
+    {
+      'windwp/nvim-autopairs',
+      event = "InsertEnter",
+      config = true
+    },
+    {
+      'nvim-treesitter/nvim-treesitter',
+      build = ':TSUpdate',
+      config = function()
+        require'nvim-treesitter.configs'.setup {
+          ensure_installed = "all",
+          sync_install = false,
+          highlight = { enable = true },
+          incremental_selection = { enable = true },
+          indent = { enable = true }
+        }
+      end
+    },
+    {
+      "nvim-treesitter/nvim-treesitter-context",
+      dependencies = {"nvim-treesitter/nvim-treesitter"},
+      config = function()
+        require("treesitter-context").setup()
+      end,
+    },
+    {
+      "gpanders/nvim-parinfer",
+      ft = {"scheme"},
+    },
+    {
+      "rose-pine/neovim",
+      name = "rose-pine",
+      config = function()
+        vim.cmd("colorscheme rose-pine")
+      end
+    },
+    {
+      "f-person/auto-dark-mode.nvim",
+      opts = {}
+    },
   },
-  {
-    'lewis6991/gitsigns.nvim',
-    config = true,
-  },
-  {
-    'windwp/nvim-autopairs',
-    event = "InsertEnter",
-    config = true
-  },
-  {
-    'nvim-treesitter/nvim-treesitter',
-    build = ':TSUpdate',
-    config = function()
-      require'nvim-treesitter.configs'.setup {
-        ensure_installed = "all",
-        sync_install = false,
-        highlight = { enable = true },
-        incremental_selection = { enable = true },
-        indent = { enable = true }
-      }
-    end
-  },
-  {
-    "nvim-treesitter/nvim-treesitter-context",
-    dependencies = {"nvim-treesitter/nvim-treesitter"},
-    config = function()
-      require("treesitter-context").setup()
-    end,
-  },
-  {
-    "gpanders/nvim-parinfer",
-    ft = {"scheme"},
-  },
-  {
-    "rose-pine/neovim",
-    name = "rose-pine",
-    config = function()
-      vim.cmd("colorscheme rose-pine")
-    end
-  },
-  {
-    "f-person/auto-dark-mode.nvim",
-    opts = {}
-  },
+  checker = { enabled = true },
 })
 
 vim.diagnostic.config({
