@@ -46,7 +46,10 @@ require("lazy").setup({
         { "<leader>sS", function() Snacks.picker.lsp_workspace_symbols() end, desc = "LSP Workspace Symbols" },
       },
     },
-    "mason-org/mason.nvim",
+    {
+      "mason-org/mason.nvim",
+      opts = {},
+    },
     "mason-org/mason-lspconfig.nvim",
     'neovim/nvim-lspconfig',
     "nvimtools/none-ls.nvim",
