@@ -18,6 +18,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
 
 require("lazy").setup({
+  checker = { enabled = true },
   spec = {
     {
       "folke/snacks.nvim",
