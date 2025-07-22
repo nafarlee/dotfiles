@@ -106,7 +106,7 @@ require("lazy").setup({
     },
     {
       "gpanders/nvim-parinfer",
-      ft = {"scheme"},
+      ft = {"scheme", "clojure"},
     },
     {
       "rose-pine/neovim",
