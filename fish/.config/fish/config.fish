@@ -2,6 +2,9 @@ if command --query nvim
   set -x EDITOR nvim
 end
 
+set -x DFT_SKIP_UNCHANGED true
+set -x DFT_IGNORE_COMMENTS true
+set -x KUBECTL_EXTERNAL_DIFF difft
 set -gx VOLTA_HOME "$HOME/.volta"
 
 fish_add_path "$VOLTA_HOME/bin"
