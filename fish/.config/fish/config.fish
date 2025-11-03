@@ -22,14 +22,6 @@ if test -f /home/nafarlee/.cache/yay/google-cloud-sdk/pkg/google-cloud-sdk/opt/g
   source /home/nafarlee/.cache/yay/google-cloud-sdk/pkg/google-cloud-sdk/opt/google-cloud-sdk/path.fish.inc
 end
 
-if test -f $HOME/.asdf/asdf.fish
-  source $HOME/.asdf/asdf.fish
-end
-
-if test -f $HOME/homebrew/opt/asdf/libexec/asdf.fish
-  source $HOME/homebrew/opt/asdf/libexec/asdf.fish
-end
-
 if test -d "$HOME/.bin"
   set -x --prepend PATH "$HOME/.bin"
 end
