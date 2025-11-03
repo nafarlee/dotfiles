@@ -1,22 +1,8 @@
-if test -d $HOME/.cargo/bin
-  set -x PATH $PATH $HOME/.cargo/bin
-end
-
-if test -d $HOME/.google-cloud-sdk/bin
-  set -x PATH $PATH $HOME/.google-cloud-sdk/bin
-end
-
-if test -d "/opt/homebrew/bin"
-  set -x --append PATH "/opt/homebrew/bin/"
-end
-
-if test -d "$HOME/google-cloud-sdk/bin"
-  set -x --append PATH "$HOME/google-cloud-sdk/bin"
-end
-
-if test -d "$HOME/.rd/bin"
-  set -x --append PATH "$HOME/.rd/bin"
-end
+fish_add_path ~/.cargo/bin
+fish_add_path ~/.google-cloud-sdk/bin
+fish_add_path ~/google-cloud-sdk/bin
+fish_add_path /opt/homebrew/bin
+fish_add_path ~/.rd/bin
 
 if test -f /home/nafarlee/.cache/yay/google-cloud-sdk/pkg/google-cloud-sdk/opt/google-cloud-sdk/path.fish.inc
   source /home/nafarlee/.cache/yay/google-cloud-sdk/pkg/google-cloud-sdk/opt/google-cloud-sdk/path.fish.inc
