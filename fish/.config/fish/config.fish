@@ -40,6 +40,8 @@ if test -d "$HOME/.bin"
   set -x --prepend PATH "$HOME/.bin"
 end
 
+fish_add_path ~/.local/bin
+
 starship init fish | source
 
 if command --query nvim
