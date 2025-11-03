@@ -22,10 +22,6 @@ if test -f /home/nafarlee/.cache/yay/google-cloud-sdk/pkg/google-cloud-sdk/opt/g
   source /home/nafarlee/.cache/yay/google-cloud-sdk/pkg/google-cloud-sdk/opt/google-cloud-sdk/path.fish.inc
 end
 
-if test -d "$HOME/.bin"
-  set -x --prepend PATH "$HOME/.bin"
-end
-
 fish_add_path ~/.local/bin
 
 starship init fish | source
