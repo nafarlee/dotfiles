@@ -121,6 +121,10 @@ require("lazy").setup({
       "f-person/auto-dark-mode.nvim",
       opts = {}
     },
+    {
+      'nullromo/go-up.nvim',
+      opts = {},
+    },
   },
   checker = { enabled = true },
 })
