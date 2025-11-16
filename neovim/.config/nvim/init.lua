@@ -125,6 +125,13 @@ require("lazy").setup({
       'nullromo/go-up.nvim',
       opts = {},
     },
+    {
+      "Olical/conjure",
+      ft = {"janet"},
+      init = function()
+        vim.g["conjure#filetype#janet"] = "conjure.client.janet.stdio"
+      end,
+    },
   },
   checker = { enabled = true },
 })
