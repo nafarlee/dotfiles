@@ -19,13 +19,6 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
     {
-      "nvim-treesitter/nvim-treesitter-context",
-      dependencies = {"nvim-treesitter/nvim-treesitter"},
-      config = function()
-        require("treesitter-context").setup()
-      end,
-    },
-    {
       "gpanders/nvim-parinfer",
       ft = {"scheme", "clojure", "janet"},
     },
