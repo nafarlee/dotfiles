@@ -19,10 +19,6 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
     {
-      "gpanders/nvim-parinfer",
-      ft = {"scheme", "clojure", "janet"},
-    },
-    {
       "rose-pine/neovim",
       name = "rose-pine",
       config = function()
