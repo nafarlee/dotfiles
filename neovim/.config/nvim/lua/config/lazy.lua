@@ -17,6 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   checker = { enabled = true },
   spec = {
+    { import = "plugins" },
     {
       "folke/snacks.nvim",
       priority = 1000,
