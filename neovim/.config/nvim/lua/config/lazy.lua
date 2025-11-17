@@ -120,10 +120,6 @@ require("lazy").setup({
       opts = {}
     },
     {
-      'nullromo/go-up.nvim',
-      opts = {},
-    },
-    {
       "Olical/conjure",
       ft = {"janet"},
       init = function()
