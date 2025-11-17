@@ -163,6 +163,7 @@ vim.api.nvim_create_autocmd("FileType", {
     local colorcolumns = {
       racket = "102",
       scheme = "102",
+      javascript = "100",
     }
     vim.o.colorcolumn = colorcolumns[ft] or "80"
   end
