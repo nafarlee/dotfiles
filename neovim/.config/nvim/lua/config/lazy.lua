@@ -19,10 +19,6 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
     {
-      "f-person/auto-dark-mode.nvim",
-      opts = {}
-    },
-    {
       "Olical/conjure",
       ft = {"janet"},
       init = function()
