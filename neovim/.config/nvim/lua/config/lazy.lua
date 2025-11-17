@@ -18,12 +18,6 @@ require("lazy").setup({
   checker = { enabled = true },
   spec = {
     { import = "plugins" },
-    {
-      "rachartier/tiny-inline-diagnostic.nvim",
-      event = "VeryLazy",
-      priority = 1000,
-      opts = {},
-    },
   },
   checker = { enabled = true },
 })
