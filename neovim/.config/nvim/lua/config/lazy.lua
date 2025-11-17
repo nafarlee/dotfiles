@@ -19,10 +19,6 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
     {
-      'lewis6991/gitsigns.nvim',
-      config = true,
-    },
-    {
       'windwp/nvim-autopairs',
       event = "InsertEnter",
       config = true
