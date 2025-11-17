@@ -12,7 +12,7 @@ fish_add_path ~/.cargo/bin
 fish_add_path ~/.google-cloud-sdk/bin
 fish_add_path ~/google-cloud-sdk/bin
 fish_add_path /opt/homebrew/bin
-fish_add_path ~/.rd/bin
+fish_add_path --move --append ~/.rd/bin
 fish_add_path ~/.local/bin
 fish_add_path /opt/gerbil/bin
 fish_add_path ~/.krew/bin
