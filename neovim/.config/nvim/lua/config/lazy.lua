@@ -19,14 +19,6 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
     {
-      "mason-org/mason-lspconfig.nvim",
-      opts = {},
-      dependencies = {
-        { "mason-org/mason.nvim", opts = {} },
-        "neovim/nvim-lspconfig",
-      },
-    },
-    {
       'nvim-lualine/lualine.nvim',
       dependencies = {'nvim-tree/nvim-web-devicons'},
       opts = {
