@@ -19,11 +19,6 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
     {
-      'windwp/nvim-autopairs',
-      event = "InsertEnter",
-      config = true
-    },
-    {
       'nvim-treesitter/nvim-treesitter',
       build = ':TSUpdate',
       config = function()
