@@ -19,19 +19,6 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
     {
-      'nvim-treesitter/nvim-treesitter',
-      build = ':TSUpdate',
-      config = function()
-        require'nvim-treesitter.configs'.setup {
-          auto_install = true,
-          sync_install = false,
-          highlight = { enable = true },
-          incremental_selection = { enable = true },
-          indent = { enable = true }
-        }
-      end
-    },
-    {
       "nvim-treesitter/nvim-treesitter-context",
       dependencies = {"nvim-treesitter/nvim-treesitter"},
       config = function()
