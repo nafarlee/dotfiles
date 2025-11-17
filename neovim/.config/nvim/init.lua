@@ -135,6 +135,12 @@ require("lazy").setup({
         vim.g["conjure#client#scheme#stdio#prompt_pattern"] = "> $?"
       end,
     },
+    {
+      "rachartier/tiny-inline-diagnostic.nvim",
+      event = "VeryLazy",
+      priority = 1000,
+      opts = {},
+    },
   },
   checker = { enabled = true },
 })
