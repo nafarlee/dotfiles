@@ -6,6 +6,8 @@ return {{
       "lua_ls",
       "shellcheck",
       "bashls",
+      "oxlint",
+      "oxfmt",
     },
   },
   dependencies = {
