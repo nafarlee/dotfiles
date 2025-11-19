@@ -8,6 +8,7 @@ return {{
       "bashls",
       "oxlint",
       "oxfmt",
+      "ts_ls",
     },
   },
   dependencies = {
