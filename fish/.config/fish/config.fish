@@ -6,6 +6,7 @@ set -x DFT_SKIP_UNCHANGED true
 set -x DFT_IGNORE_COMMENTS true
 set -x KUBECTL_EXTERNAL_DIFF difft
 set -gx VOLTA_HOME "$HOME/.volta"
+set fish_greeting
 
 fish_add_path "$VOLTA_HOME/bin"
 fish_add_path ~/.cargo/bin
