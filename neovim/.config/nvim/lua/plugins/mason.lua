@@ -11,6 +11,7 @@ return {{
       "ts_ls",
       "regal",
       "eslint",
+      "terraformls",
     },
   },
   dependencies = {
