@@ -9,6 +9,7 @@ return {{
       "oxlint",
       "oxfmt",
       "ts_ls",
+      "regal",
     },
   },
   dependencies = {
