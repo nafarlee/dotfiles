@@ -12,6 +12,7 @@ return {{
       "regal",
       "eslint",
       "terraformls",
+      "biome",
     },
   },
   dependencies = {
