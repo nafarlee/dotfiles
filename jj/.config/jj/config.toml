@@ -6,3 +6,6 @@ email = "nicholasafarley@gmail.com"
 
 [ui]
 diff-formatter = ["difft", "--color=always", "$left", "$right"]
+
+[revsets]
+bookmark-advance-to = "@-"
