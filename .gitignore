@@ -6,3 +6,5 @@ fish/.config/fish/fish_variables
 kitty/.config/kitty/current-theme.conf
 kitty/.config/kitty/kitty.conf.bak
 metadata.binpb
+fish/.config/fish/functions/bass.fish
+fish/.config/fish/functions/__bass.py
