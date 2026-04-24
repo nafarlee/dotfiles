@@ -2,6 +2,10 @@ if command --query nvim
   set -x EDITOR nvim
 end
 
+if type -q bass; and test -f /etc/profile
+  bass source /etc/profile
+end
+
 set -x DFT_SKIP_UNCHANGED true
 set -x DFT_IGNORE_COMMENTS true
 set -x KUBECTL_EXTERNAL_DIFF difft
