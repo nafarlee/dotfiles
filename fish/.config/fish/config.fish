@@ -6,11 +6,16 @@ if type -q bass; and test -f /etc/profile
   bass source /etc/profile
 end
 
+if test -d "$HOME/.pyenv"
+  set -x PYENV_ROOT "$HOME/.pyenv"
+  fish_add_path $PYENV_ROOT/bin
+  pyenv init - fish | source
+end
+
 set -x DFT_SKIP_UNCHANGED true
 set -x DFT_IGNORE_COMMENTS true
 set -x KUBECTL_EXTERNAL_DIFF difft
 set -gx VOLTA_HOME "$HOME/.volta"
-set -x PYENV_ROOT "$HOME/.pyenv"
 set fish_greeting
 
 fish_add_path "$VOLTA_HOME/bin"
@@ -22,6 +27,5 @@ fish_add_path --move --append ~/.rd/bin
 fish_add_path ~/.local/bin
 fish_add_path /opt/gerbil/bin
 fish_add_path ~/.krew/bin
-fish_add_path $PYENV_ROOT/bin
 
 starship init fish | source
