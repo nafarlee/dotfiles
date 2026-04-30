@@ -29,6 +29,10 @@ fish_add_path ~/.local/bin
 fish_add_path /opt/gerbil/bin
 fish_add_path ~/.krew/bin
 
+if command --query zoxide
+  zoxide init fish | source
+end
+
 starship init fish | source
 
 if test -f "$HOME/.env.fish"
