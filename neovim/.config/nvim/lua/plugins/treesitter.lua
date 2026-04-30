@@ -1,15 +1,19 @@
 return {{
   'nvim-treesitter/nvim-treesitter',
-  branch = "master",
   lazy = false,
   build = ':TSUpdate',
-  config = function()
-    require('nvim-treesitter.configs').setup {
-      auto_install = true,
-      sync_install = false,
-      highlight = { enable = true },
-      incremental_selection = { enable = true },
-      indent = { enable = true }
-    }
-  end
+  init = function()
+    vim.api.nvim_create_autocmd('FileType', {
+      pattern = { '<filetype>' },
+      callback = function()
+        -- Enable treesitter highlighting and disable regex syntax
+        vim.treesitter.start()
+        -- Enable treesitter-based indentation
+        vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+        -- Enable treesitter-based folds
+        vim.wo[0][0].foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+        vim.wo[0][0].foldmethod = 'expr'
+      end,
+    })
+  end,
 }}
