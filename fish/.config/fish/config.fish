@@ -29,3 +29,7 @@ fish_add_path /opt/gerbil/bin
 fish_add_path ~/.krew/bin
 
 starship init fish | source
+
+if test -f "$HOME/.env.fish"
+  source "$HOME/.env.fish"
+end
