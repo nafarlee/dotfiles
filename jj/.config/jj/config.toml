@@ -10,3 +10,6 @@ default-command = "log"
 
 [revsets]
 bookmark-advance-to = "@-"
+
+[git]
+private-commits = "description('private:*')"
