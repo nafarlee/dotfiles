@@ -1,3 +1,5 @@
+set -x TERM xterm
+
 if command --query nvim
   set -x EDITOR nvim
 end
