@@ -15,5 +15,19 @@ return {{
         vim.wo[0][0].foldmethod = 'expr'
       end,
     })
+    require('nvim-treesitter').install({
+      "python",
+      "markdown",
+      "bash",
+      "javascript",
+      "typescript",
+      "scheme",
+      "sql",
+      "yaml",
+      "toml",
+      "fish",
+      "lua",
+      "clojure",
+    })
   end,
 }}
