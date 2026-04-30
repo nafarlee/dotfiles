@@ -14,7 +14,7 @@ end
 
 set -x DFT_DISPLAY inline
 set -x DFT_SKIP_UNCHANGED true
-set -x DFT_IGNORE_COMMENTS true
+set -x DFT_IGNORE_COMMENTS false
 set -x KUBECTL_EXTERNAL_DIFF difft
 set -gx VOLTA_HOME "$HOME/.volta"
 set fish_greeting
